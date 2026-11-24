@@ -1,13 +1,13 @@
 {
   "source": "https://claude.ai/artifact/JyZjDAewAEusKwmN6LbvVH",
-  "source_version": "1795163989-69ba",
+  "source_version": "1795428890-a89f",
   "last_change": {
     "by": "Loic",
     "at": "2026-11-20T08:39:37Z",
     "via": "Claude (Cowork)",
     "note": "20 Nov 2026: hero banner pictures now cover tablets, with no third file. Below 992px (phones, tablets held upright) the hero takes the phone file and the fade from the bottom; from 992px (tablets held sideways, laptops, desktops) the desktop file and its two fades. The switch moved from 1200px to 992px (bs-breakpoint-lg), the step the footer, the filters and the content tabs use. Added: where each file is anchored and what a tablet cuts off. Open item: the hero height limits."
   },
-  "mirrored_at": "2026-11-21",
+  "mirrored_at": "2026-11-24",
   "files": 274,
   "assets": {
     "Icons": 54,
