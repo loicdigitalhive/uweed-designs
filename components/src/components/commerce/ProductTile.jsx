@@ -92,7 +92,7 @@ export function ProductTile({
     >
       <div className="uw-tile__row">
         <div className="uw-tile__media">
-          <img src={image} alt="" width="344" height="330" loading="lazy" />
+          <img src={image} alt="" width="344" height="344" loading="lazy" />
           {flags.length ? <div className="uw-tile__badges">{flags.map(badgeFor)}</div> : null}
           <div className="uw-tile__chips uw-tile__chips--media">
             <Badge variant="attribute">CBD {cbd}</Badge>

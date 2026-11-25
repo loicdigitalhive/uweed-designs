@@ -832,6 +832,246 @@
           "type": "image/png"
         }
       }
+    },
+    "Imagery examples": {
+      "name": "Imagery examples",
+      "tile": "l",
+      "order": [
+        "effects-sport-s3-detail-reference.png",
+        "effects-schlaf.png",
+        "effects-schmerzen.png",
+        "effects-nebenwirkungen-exception.png",
+        "effects-gegenanzeigen-exception.png",
+        "city-collage-historical.png",
+        "blog-subject-led-collage-historical.png",
+        "blog-comparison-composition.png",
+        "category-cbd-blueten-reference.png",
+        "category-proposal-historical.png",
+        "inline-rounded-title-historical.png",
+        "inline-container-historical.png",
+        "inline-sequence-1-capsules.png",
+        "inline-sequence-5-illustrated-route.png",
+        "inline-comparison-1-angled-cards.png",
+        "inline-comparison-5-circular-panels.png",
+        "inline-annotated-1-open-callouts.png",
+        "inline-annotated-2-numbered-key.png",
+        "inline-qa-1-speech-bubbles.png",
+        "inline-qa-4-illustrated-answer.png",
+        "inline-takeaway-2-typographic.png",
+        "inline-takeaway-3-illustrated.png",
+        "inline-desktop-mobile-reflow.png",
+        "category-education-cultivation.png",
+        "category-education-flowers-buds-trim.png",
+        "category-education-oil-ingredients.png",
+        "inline-annotated-3-detail-zooms.png",
+        "inline-qa-3-editorial-columns.png",
+        "inline-takeaway-4b-navy-panel.png"
+      ],
+      "files": {
+        "effects-sport-s3-detail-reference.png": {
+          "blob": "ecf26384ebce6abe1f31a16ba68bef3d",
+          "name": "effects-sport-s3-detail-reference.png",
+          "sha256": "46e4b2123d6df43da1e1d4795d9fc727761d63702fcf63d2b8cee957ebd3b4a9",
+          "size": 775470,
+          "type": "image/png"
+        },
+        "effects-schlaf.png": {
+          "blob": "e5a71f9bce67caac7456a453728b40f3",
+          "name": "effects-schlaf.png",
+          "sha256": "07da1bfe9cb2c78fd875a0a886131e34113bd8606569ed9b14d05fd325ef04c3",
+          "size": 2625350,
+          "type": "image/png"
+        },
+        "effects-schmerzen.png": {
+          "blob": "8a84566548f6e3de456e5262f00150be",
+          "name": "effects-schmerzen.png",
+          "sha256": "60661038d7b772db054f28e59cecdec1f06fe59568f92c3519e8b8bbe26fce31",
+          "size": 2753723,
+          "type": "image/png"
+        },
+        "effects-nebenwirkungen-exception.png": {
+          "blob": "9fd28c73dd5832cce76d1be17711fd82",
+          "name": "effects-nebenwirkungen-exception.png",
+          "sha256": "755a93a836c8eb8e4976726449c929457327cc1b078ef86bd50910cd03a1298e",
+          "size": 2685090,
+          "type": "image/png"
+        },
+        "effects-gegenanzeigen-exception.png": {
+          "blob": "fe7c5b758fb1c7d05760f7304a514a74",
+          "name": "effects-gegenanzeigen-exception.png",
+          "sha256": "cd05414dfe440387fb91a01b5ec44fb8eb6dd1f980c448909456b657b6dda7b0",
+          "size": 2715396,
+          "type": "image/png"
+        },
+        "city-collage-historical.png": {
+          "blob": "abc18bef0c6605625a85cef8d700f42d",
+          "name": "city-collage-historical.png",
+          "sha256": "60d6e91ede7110f7b37c8d7524e8d8cfa1a3ae21c66ba9e377c790822f452445",
+          "size": 3921080,
+          "type": "image/png"
+        },
+        "blog-subject-led-collage-historical.png": {
+          "blob": "dca533a52d695092367fb7bf82cbca09",
+          "name": "blog-subject-led-collage-historical.png",
+          "sha256": "87e3d46ba2b986dcb5e3c839fd4021dd197f9903acf837cc56428553c87f7050",
+          "size": 3604236,
+          "type": "image/png"
+        },
+        "blog-comparison-composition.png": {
+          "blob": "dc569040025c1453882c9aec5499b4f0",
+          "name": "blog-comparison-composition.png",
+          "sha256": "da830470cd6f8113faf0fda9ad475df1e6f1fe0fdcec99f1a185cc96f033a7c8",
+          "size": 913051,
+          "type": "image/png"
+        },
+        "category-cbd-blueten-reference.png": {
+          "blob": "96903be2aec2aaaf575050b539901a3c",
+          "name": "category-cbd-blueten-reference.png",
+          "sha256": "98dc9b8019ed96f5c530f3dbca3fca8033b980e37821a44047a8dad518f36ef6",
+          "size": 2489855,
+          "type": "image/png"
+        },
+        "category-proposal-historical.png": {
+          "blob": "2265885f0882cbbd95f50a2c9157caad",
+          "name": "category-proposal-historical.png",
+          "sha256": "b05c4586c1a7babbb6a37a0762cadbf573ebba7f650a9d156607ec78403e1e1f",
+          "size": 3938488,
+          "type": "image/png"
+        },
+        "inline-rounded-title-historical.png": {
+          "blob": "3eb8b96ef5b2bedc786b6be06f96c8ba",
+          "name": "inline-rounded-title-historical.png",
+          "sha256": "2f01894311b1f4c70f8c278215eeefaf4f93ff55293f42ca9ae491aba51cad3e",
+          "size": 71934,
+          "type": "image/png"
+        },
+        "inline-container-historical.png": {
+          "blob": "2391c8722bcf2b4421e88e1e0ac3973c",
+          "name": "inline-container-historical.png",
+          "sha256": "e62111801ede90b7f9bd0edc2504e31262122f150cf394f5fbf98804461b26e8",
+          "size": 83331,
+          "type": "image/png"
+        },
+        "inline-sequence-1-capsules.png": {
+          "blob": "41eef0f2fe7bad5cda5a0da0d952ae97",
+          "name": "inline-sequence-1-capsules.png",
+          "sha256": "f57cbcef2d51316c7eeb41dc1ceec5ff6d882cbae9135d15b1d0322edc6c1662",
+          "size": 48524,
+          "type": "image/png"
+        },
+        "inline-sequence-5-illustrated-route.png": {
+          "blob": "0b230760358cd6df6aa392e1d4fee86c",
+          "name": "inline-sequence-5-illustrated-route.png",
+          "sha256": "cfca8b6a2f67f0259dfed058771f534f05544c2ec6eef88a9e468f0ab30a00d6",
+          "size": 187574,
+          "type": "image/png"
+        },
+        "inline-comparison-1-angled-cards.png": {
+          "blob": "3b0f2b18e39f4135e5d8ea75e71a3ad4",
+          "name": "inline-comparison-1-angled-cards.png",
+          "sha256": "c85fcadf99b2c7428c3f8f15f8a241a2c75629eaba4c2fff160051ac3a3c7f69",
+          "size": 163334,
+          "type": "image/png"
+        },
+        "inline-comparison-5-circular-panels.png": {
+          "blob": "bf3ee562b5869d21be85bbb55444d15f",
+          "name": "inline-comparison-5-circular-panels.png",
+          "sha256": "38465c05c334dce3ed449c5c877673d38f138ab23e0171c2fa974fba4f8455ee",
+          "size": 170200,
+          "type": "image/png"
+        },
+        "inline-annotated-1-open-callouts.png": {
+          "blob": "0c7ab6435785f2e3ab8224713c13b364",
+          "name": "inline-annotated-1-open-callouts.png",
+          "sha256": "96a7cc7e408d0a6e7eae75e47d3fe7ff8ffd6d616c4a0af1443809ed61bd1e37",
+          "size": 147781,
+          "type": "image/png"
+        },
+        "inline-annotated-2-numbered-key.png": {
+          "blob": "bff872566c67301ee56570725914ac48",
+          "name": "inline-annotated-2-numbered-key.png",
+          "sha256": "ffaae2232642db3624084843e7e80fbbfeb7dc317c6bcf1d0d8162b410f70b9f",
+          "size": 169005,
+          "type": "image/png"
+        },
+        "inline-qa-1-speech-bubbles.png": {
+          "blob": "c4cdd86a39d2dfe10be7c129e6f18efa",
+          "name": "inline-qa-1-speech-bubbles.png",
+          "sha256": "d7d468fc584de2c7207d14aa7671be7edca091a4d9f7ebb4d47f263d67d9cda2",
+          "size": 40616,
+          "type": "image/png"
+        },
+        "inline-qa-4-illustrated-answer.png": {
+          "blob": "45b97976dd3fc406f1dcc9d4fdbc96bf",
+          "name": "inline-qa-4-illustrated-answer.png",
+          "sha256": "ad7780891486e74c725065abbef4f49ef7bddb7df0fb48031ee3ba19b0efdfbf",
+          "size": 155405,
+          "type": "image/png"
+        },
+        "inline-takeaway-2-typographic.png": {
+          "blob": "e84dfb0d434ca41eb31b0c332253faed",
+          "name": "inline-takeaway-2-typographic.png",
+          "sha256": "8438cfb04abefcf952bbaa2b6a54152810e1d5404c99d0b20f77d98d08d746ac",
+          "size": 33229,
+          "type": "image/png"
+        },
+        "inline-takeaway-3-illustrated.png": {
+          "blob": "2d13c8d90f7459d943237ed847ca2f9b",
+          "name": "inline-takeaway-3-illustrated.png",
+          "sha256": "d38802d963bdcbb093390bdca8ca267f23d590d2484f1777f5f31847ff91b913",
+          "size": 141063,
+          "type": "image/png"
+        },
+        "inline-desktop-mobile-reflow.png": {
+          "blob": "7a265c59f19eba2cc8589bc04f1e9462",
+          "name": "inline-desktop-mobile-reflow.png",
+          "sha256": "d1b0a9db443946e0f9fd86c92bd50da8d64591c53c972778459322fd0bb7683d",
+          "size": 253995,
+          "type": "image/png"
+        },
+        "category-education-cultivation.png": {
+          "blob": "3415fc551ca844b3a92647658793d12c",
+          "name": "category-education-cultivation.png",
+          "sha256": "344497b2ee96d5d18d369354351c28fcdbeddcef9b4511450dc336e226be2593",
+          "size": 152516,
+          "type": "image/png"
+        },
+        "category-education-flowers-buds-trim.png": {
+          "blob": "236765ff49815156539d9bc2a66356cc",
+          "name": "category-education-flowers-buds-trim.png",
+          "sha256": "e15bb5a19a56a8f030b7dfbf104168fbb0844b7302637597d57f8d3366b6c45a",
+          "size": 149905,
+          "type": "image/png"
+        },
+        "category-education-oil-ingredients.png": {
+          "blob": "cb34e97619cfe3160c4b1239cdf24b39",
+          "name": "category-education-oil-ingredients.png",
+          "sha256": "ee5cf4f81e059a2a7895aa5b284175b4e6bb643520e6d7b21aa19a5c50f8cc6f",
+          "size": 131240,
+          "type": "image/png"
+        },
+        "inline-annotated-3-detail-zooms.png": {
+          "blob": "916157f029345c1b731cfc6ddb35b201",
+          "name": "inline-annotated-3-detail-zooms.png",
+          "sha256": "e8d60c72c5f91aa9827443e92a451f11e283da5a6e6238c6b87f3f881842ec93",
+          "size": 206478,
+          "type": "image/png"
+        },
+        "inline-qa-3-editorial-columns.png": {
+          "blob": "4cb7ac0e02e8f8545e80b4342c6d28a3",
+          "name": "inline-qa-3-editorial-columns.png",
+          "sha256": "7f5c669941423d5c65e530a7bbfb4041799e6324cd0407fc26c842b4969d7462",
+          "size": 36270,
+          "type": "image/png"
+        },
+        "inline-takeaway-4b-navy-panel.png": {
+          "blob": "429db0779af05585e92dab652b130a92",
+          "name": "inline-takeaway-4b-navy-panel.png",
+          "sha256": "d54763926915452f045a2d1bd9c25e08e4b9231a3225cc1b3ec7be9ec67f7a25",
+          "size": 37917,
+          "type": "image/png"
+        }
+      }
     }
   },
   "blobs": {},
@@ -848,7 +1088,8 @@
   "groups": [
     "Logos",
     "Icons",
-    "Imagery"
+    "Imagery",
+    "Imagery examples"
   ],
   "layout": "files",
   "libraries": [
@@ -878,9 +1119,9 @@
   "title": "uWeed Design System",
   "lastChange": {
     "by": "Loic",
-    "at": "2026-11-20T08:39:37Z",
-    "via": "Claude (Cowork)",
-    "note": "20 Nov 2026: hero banner pictures now cover tablets, with no third file. Below 992px (phones, tablets held upright) the hero takes the phone file and the fade from the bottom; from 992px (tablets held sideways, laptops, desktops) the desktop file and its two fades. The switch moved from 1200px to 992px (bs-breakpoint-lg), the step the footer, the filters and the content tabs use. Added: where each file is anchored and what a tablet cuts off. Open item: the hero height limits."
+    "at": "2026-11-25T12:10:00Z",
+    "via": "Claude (Claude Code)",
+    "note": "25 Nov 2026: product photographs are 1:1, 2000 x 2000, transparent, with one table of smaller copies per family (Imagery guide). The desktop product tile frame is square (was 172:165); ProductTile, PdpGallery and CartDrawer name the copy each uses."
   },
   "upgraded": {
     "v": 1,

@@ -2,7 +2,7 @@ The design system for **uweed.ch**, a Swiss CBD and hemp marketplace selling flo
 
 This system is the single source of truth for uWeed's design. A value is declared in its tokens and nowhere else, and each component's guidelines own its anatomy, states and behaviour. Where the live site differs, the difference is recorded and decided case by case; it is never copied in silently. Never declare a value of your own: use a token, and if no token fits, raise it rather than inventing one. Nothing is rounded to a 4/8px grid or borrowed from a framework default.
 
-The content rules below follow two of uWeed's source documents, **04 Tone of Voice** (v1.1) and **05 Localisation Rules** (v1.2). Those documents remain the full reference for writing; this system carries the parts that shape the interface. Where the sources disagreed, the decisions of October 2026 are recorded under *Punctuation and symbols*. **11 Visual Identity** has not been written, so photography and illustration are still absent here and must not be inferred. The visual treatment of imagery is in the **uWeed Imagery Master Guide**; this system holds the sizing, framing and display rules for category images and partner logos (see *Imagery*). The logo kit was supplied separately and is in this system (see Logo).
+The content rules below follow two of uWeed's source documents, **04 Tone of Voice** (v1.1) and **05 Localisation Rules** (v1.2). Those documents remain the full reference for writing; this system carries the parts that shape the interface. Where the sources disagreed, the decisions of October 2026 are recorded under *Punctuation and symbols*. Photography, illustration and the look of every image family are in the section **Imagery guide** (moved into this system from the uWeed Imagery Master Guide on 25 November 2026), with a table of every image format; *Imagery* below holds the display rules for category images, partner logos and hero banners. The logo kit was supplied separately and is in this system (see Logo).
 
 ---
 
@@ -264,9 +264,9 @@ The approved kit (August 2026) is in the **Logos** asset group and shown on the 
 
 ### Imagery
 
-The look of uWeed's imagery is defined in the **[uWeed Imagery Master Guide](https://docs.google.com/document/d/1UlCUc-Xgds9ZIqRwG1SAkIVsz2cYtQL2rLFGwwReWzU/edit)**. This system holds the sizing, framing and display rules for three kinds of image: product category images, partner brand logos and hero banner pictures (November 2026). The files themselves are not in this system: every image in the previews is a placeholder that shows the framing, not artwork. The `Imagery` foundations page shows the first two side by side, on a desktop and a 380px phone; hero banner pictures are not on that page yet.
+The look of uWeed's imagery, and the format of every image family, are in the section **Imagery guide** (*Formats at a glance*). This section holds the sizing, framing and display rules for four kinds of image: product category images, product photographs, partner brand logos and hero banner pictures (November 2026). The files themselves are not in this system: every image in the previews is a placeholder that shows the framing, not artwork. The `Imagery` foundations page shows the first two side by side, on a desktop and a 380px phone; hero banner pictures are not on that page yet.
 
-Blog imagery is **16:9 everywhere, from one source file**: the featured image at the top of an article, the card on a desktop and the row on a phone all show the same cut. No place gets its own crop or its own shape. Product photography, blog images, other banners and the uWeed logo keep their own rules; the three below apply to category images, partner logos and hero banner pictures only.
+Blog imagery is **3:2 everywhere, from one source file** (1800 × 1200 px master; decided 25 November 2026, replacing 16:9): the featured image at the top of an article, the card on a desktop and the row on a phone all show the same cut. No place gets its own crop or its own shape. Blog images, other banners and the uWeed logo keep their own rules; the four below apply to category images, product photographs, partner logos and hero banner pictures only. Every smaller picture is a copy of its master in the same shape (*Imagery guide*, *Smaller copies*).
 
 #### Product category images
 
@@ -286,6 +286,25 @@ Blog imagery is **16:9 everywhere, from one source file**: the featured image at
 - Keep the asset's transparency and its built-in margins. Never crop, stretch, or add padding around the image: the margins in the file are the spacing.
 - The frame stays square on desktop and mobile; its width follows the layout. A carousel or section may run full width; each image in it stays square.
 - No background behind the image: it sits on whatever surface the tile has, so a transparent file never shows a white rectangle.
+
+#### Product photographs
+
+**Asset.** A square 1:1 canvas, master size **2000 × 2000 px**, **transparent** outside the product (RGBA PNG). One master per picture serves every place: the product tile, the product page and its zoom, the gallery thumbnails and the cart. Each place takes a smaller copy in the same shape (*Imagery guide*, *Smaller copies*).
+
+**Framing.**
+
+- The product is centred with about **8% clear space on every side**; a tall or narrow product keeps more at the sides.
+- Keep the whole product and its packaging visible, in its natural proportions. Nothing touches the edge of the canvas.
+- Use the authentic packshot and labels of the product sold; never a generic study in its place.
+- No text, badge, price or logo in the file: the interface adds badges and prices.
+
+**Display.**
+
+- **Product tile, desktop:** a square frame (`aspect-ratio: var(--tile-frame-ratio)`, 1:1) on `white`, the picture shown whole with `object-fit: contain`.
+- **Product tile, phone row:** the picture is shown at 8rem square inside the row's frame (`--tile-frame-ratio-compact`), whole.
+- **Product page:** the main picture fills a square frame on `light-gray`; the gallery thumbnails are square. The transparency shows the frame's colour behind the product.
+- **Cart:** a 64px square thumbnail on `light-gray`.
+- Never crop, stretch or pad the picture: the clear space in the file is the spacing.
 
 #### Partner brand logos
 
@@ -412,7 +431,8 @@ Two more groups show the system in use rather than one component at a time:
 These are uWeed's own unresolved decisions. Do not resolve them by accident.
 
 1. **Navigation is blue only.** The Category Filters Final decision withdrew the earlier green pagination and carousel arrows.
-2. **Hero banner height limits.** Proposed on the build card and not confirmed: the hero is never lower than 480px or higher than 800px below 992px, and never lower than 440px or higher than 640px from 992px.
+2. **Other homepage banners.** The choice between H5 and H6 is not made (*Imagery guide*, *Decisions still required*).
+3. **Hero banner height limits.** Proposed on the build card and not confirmed: the hero is never lower than 480px or higher than 800px below 992px, and never lower than 440px or higher than 640px from 992px.
 
 A page built strictly against this system will not match production until the token corrections ship on the site (`white`, `line`, the five shadows, `radius-pill`, the 16px card radius, and the removal of Poppins 400/500). This system describes the **target**.
 

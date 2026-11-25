@@ -13,8 +13,8 @@ export interface BlogCardProps {
   /** Two lines, clamped. Hidden by CSS below `md` — never rendered
    *  conditionally by device, which fragments the page cache. */
   excerpt?: React.ReactNode;
-  /** One 16:9 source serves card, row, featured slot and article header.
-   *  The picture is 16:9 in every variant and at every width. */
+  /** One 3:2 source serves card, row, featured slot and article header.
+   *  The picture is 3:2 in every variant and at every width. */
   image?: string;
   /** A label, not a link. On the desktop card it lies over the picture; in the
    *  row it sits above the title. Suppress it when the listing is already

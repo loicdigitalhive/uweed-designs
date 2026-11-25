@@ -11,7 +11,7 @@ function sec(t){return h("p",{className:"sec"},t);}
 function lbl(t){return h("p",{className:"lbl"},t);}
 function row(p){var k=[].slice.call(arguments,1);return h.apply(null,["div",Object.assign({className:"row"},p)].concat(k));}
 function ph(c,t,w,hh){w=w||600;hh=hh||600;return 'data:image/svg+xml;utf8,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+hh+'"><rect width="'+w+'" height="'+hh+'" fill="'+c+'"/>'+(t?'<text x="'+w/2+'" y="'+(hh/2+hh*0.03)+'" font-family="DM Sans,sans-serif" font-size="'+Math.round(Math.min(w,hh)*0.07)+'" fill="#0B102A" text-anchor="middle">'+t+'</text>':'')+'</svg>');}
-function tph(c){return 'data:image/svg+xml;utf8,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="688" height="660"><rect width="688" height="660" fill="#fff"/><ellipse cx="344" cy="340" rx="190" ry="210" fill="'+c+'"/></svg>');}
+function tph(c){return 'data:image/svg+xml;utf8,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="688" height="688"><ellipse cx="344" cy="344" rx="190" ry="262" fill="'+c+'"/></svg>');}
 var PT = NS.ProductTile;
 var BASE={brand:"Harlequin",name:"Harlequin CBD Blüten Indoor",size:"3 g",cbd:"15%",thc:"0.7%",rating:"4.8",reviewCount:212,href:"#",image:tph("#D1EFE5")};
 var STATES=[

@@ -90,7 +90,7 @@ function _extends() { return _extends = Object.assign ? Object.assign.bind() : f
    is laid over the top-left corner of the picture; in the row (the compact
    variant, and every card on a phone) it sits above the title, because on a
    small picture it would cover most of it.
-   The picture is 16:9 in every variant and at every width. */
+   The picture is 3:2 in every variant and at every width. */
 function BlogCard({
   variant = "standard",
   title,
@@ -113,8 +113,8 @@ function BlogCard({
   }, /*#__PURE__*/React.createElement("img", {
     src: image,
     alt: "",
-    width: "1600",
-    height: "900",
+    width: "1800",
+    height: "1200",
     loading: "lazy"
   })), /*#__PURE__*/React.createElement("div", {
     className: "uw-post__body"
@@ -935,7 +935,7 @@ function ProductTile({
     src: image,
     alt: "",
     width: "344",
-    height: "330",
+    height: "344",
     loading: "lazy"
   }), flags.length ? /*#__PURE__*/React.createElement("div", {
     className: "uw-tile__badges"

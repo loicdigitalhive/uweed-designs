@@ -838,7 +838,7 @@ h6{font-size:var(--fs-h6);font-weight:var(--fw-semibold);line-height:var(--lh-h6
    token except the two artboard ratios and the mobile frame dimensions. */
 .uw-tile{position:relative;display:flex;flex-direction:column;overflow:hidden}
 .uw-tile__row{display:flex;flex-direction:column;flex:1}
-.uw-tile__media{position:relative;aspect-ratio:var(--tile-frame-ratio);background:var(--white);flex:none}
+.uw-tile__media{position:relative;aspect-ratio:1 / 1;background:var(--white);flex:none}
 .uw-tile__media img{width:100%;height:100%;object-fit:contain;display:block}
 .uw-tile__badges{position:absolute;top:var(--space-m);left:var(--space-m);display:flex;flex-direction:row;gap:var(--space-3xs);pointer-events:none}
 .uw-tile__badges .uw-badge:nth-child(n+4){display:none}
@@ -933,7 +933,7 @@ h6{font-size:var(--fs-h6);font-weight:var(--fw-semibold);line-height:var(--lh-h6
    one-line and a three-line headline produce identical cards. */
 .uw-post{position:relative;display:flex;flex-direction:column;background:var(--white);border:var(--border-hairline) solid var(--line);border-radius:var(--radius-card);box-shadow:var(--shadow-xs);overflow:hidden;transition:transform var(--motion-fast) var(--motion-ease),box-shadow var(--motion-fast) var(--motion-ease)}
 @media (hover:hover) and (pointer:fine){.uw-post:hover{transform:translateY(var(--lift-hover));box-shadow:var(--shadow-md)}}
-.uw-post__media{position:relative;aspect-ratio:16 / 9;background:var(--light-gray);flex-shrink:0}
+.uw-post__media{position:relative;aspect-ratio:3 / 2;background:var(--light-gray);flex-shrink:0}
 .uw-post__media img{width:100%;height:100%;object-fit:cover;display:block}
 /* The label is the first thing in the body. On the card it is laid over the
    top-left corner of the picture; in the row it sits above the title. */

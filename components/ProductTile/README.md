@@ -11,6 +11,7 @@ Use `ProductTile` for every product in a listing, a carousel rail, or a related-
 <ProductTile … lang="fr" />
 ```
 
+- **The picture is the square product photograph**, transparent, shown whole in a square frame on white (README, *Imagery*, *Product photographs*). The tile uses the 688 × 688 copy on a desktop and the 256 × 256 copy in the phone row.
 - **One link, one CTA.** The whole card navigates through a stretched anchor named by the product. No favourite control, no size `<select>` — several-sizes products get the `apply` CTA.
 - Badges top-left in a row: priority sale › bestseller › new, max three (two on mobile), dropped from the right. Never focusable.
 - Green carries the **brand line**, not the price. Tile prices are dark blue; reduced prices red.

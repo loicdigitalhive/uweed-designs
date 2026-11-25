@@ -13,9 +13,9 @@ function row(p){var k=[].slice.call(arguments,1);return h.apply(null,["div",Obje
 function ph(c,t,w,hh){w=w||600;hh=hh||600;return 'data:image/svg+xml;utf8,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+hh+'"><rect width="'+w+'" height="'+hh+'" fill="'+c+'"/>'+(t?'<text x="'+w/2+'" y="'+(hh/2+hh*0.03)+'" font-family="DM Sans,sans-serif" font-size="'+Math.round(Math.min(w,hh)*0.07)+'" fill="#0B102A" text-anchor="middle">'+t+'</text>':'')+'</svg>');}
 var AR = NS.ArticleRow, BC = NS.BlogCard, Button = NS.Button;
 var arts = [
-  {href:"#a",title:"Was ist CBD? Definition und Überblick über Cannabidiol",category:"Wissen",excerpt:"Was Cannabidiol ist, woher es kommt und in welchen Produktformen es angeboten wird.",image:ph("#D1EFE5","16:9",1600,900)},
-  {href:"#b",title:"CBD vs THC: die Unterschiede verstehen und die richtigen Produkte auswählen",category:"Wissen",excerpt:"Worin sich die beiden Cannabinoide unterscheiden und was das für die Produktwahl heisst.",image:ph("#CED4F3","16:9",1600,900)},
-  {href:"#c",title:"Ist CBD in der Schweiz legal? Gesetzeslage 2026 im Überblick",category:"Recht und Sicherheit",excerpt:"Die aktuelle Gesetzeslage und was beim Reisen gilt.",image:ph("#E7E7E9","16:9",1600,900)}];
+  {href:"#a",title:"Was ist CBD? Definition und Überblick über Cannabidiol",category:"Wissen",excerpt:"Was Cannabidiol ist, woher es kommt und in welchen Produktformen es angeboten wird.",image:ph("#D1EFE5","3:2",1800,1200)},
+  {href:"#b",title:"CBD vs THC: die Unterschiede verstehen und die richtigen Produkte auswählen",category:"Wissen",excerpt:"Worin sich die beiden Cannabinoide unterscheiden und was das für die Produktwahl heisst.",image:ph("#CED4F3","3:2",1800,1200)},
+  {href:"#c",title:"Ist CBD in der Schweiz legal? Gesetzeslage 2026 im Überblick",category:"Recht und Sicherheit",excerpt:"Die aktuelle Gesetzeslage und was beim Reisen gilt.",image:ph("#E7E7E9","3:2",1800,1200)}];
 function Demo(){ return h(F,null,
   sec("desktop — three cards, one button to the magazine"),
   h(AR,{title:"CBD Grundlagen",articles:arts,moreLabel:"Zum CBD-Magazin",moreHref:"#"}),

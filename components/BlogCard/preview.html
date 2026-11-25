@@ -1,4 +1,4 @@
-<!-- @dsCard group="Content" height=735 width=1100 subtitle="Standard, featured and compact. One link per card, one 16:9 picture shape. On a phone every card is the compact row" -->
+<!-- @dsCard group="Content" height=735 width=1100 subtitle="Standard, featured and compact. One link per card, one 3:2 picture shape. On a phone every card is the compact row" -->
 <!doctype html>
 <html lang="de">
 <head><meta charset="utf-8"><title>BlogCard</title>
@@ -14,15 +14,15 @@ function ph(c,t,w,hh){w=w||600;hh=hh||600;return 'data:image/svg+xml;utf8,'+enco
 var BC = NS.BlogCard;
 function Demo(){ return h(F,null,
   sec("featured — one per archive"),
-  h(BC,{variant:"featured",href:"#",title:"CBD am Steuer: was in der Schweiz gilt",excerpt:"Grenzwerte, Kontrollen und was bei einem Test passiert.",image:ph("#CED4F3","16:9",1600,900),category:"Recht & Sicherheit",date:"August 2026",dateTime:"2026-08"}),
+  h(BC,{variant:"featured",href:"#",title:"CBD am Steuer: was in der Schweiz gilt",excerpt:"Grenzwerte, Kontrollen und was bei einem Test passiert.",image:ph("#CED4F3","3:2",1800,1200),category:"Recht & Sicherheit",date:"August 2026",dateTime:"2026-08"}),
   h("div",{style:{display:"grid",gridTemplateColumns:"minmax(0,2fr) minmax(0,1fr)",gap:"var(--space-l)",marginTop:"var(--space-m)"}},
     h("div",null, sec("standard"),
       h("div",{style:{display:"grid",gridTemplateColumns:"minmax(0,1fr) minmax(0,1fr)",gap:"var(--space-m)"}},
-        h(BC,{href:"#",title:"Vollspektrum oder Isolat?",excerpt:"Was der Unterschied für die Wirkung bedeutet.",image:ph("#D1EFE5","16:9",1600,900),category:"Wissen",date:"Juli 2026",dateTime:"2026-07"}),
-        h(BC,{href:"#",title:"Indoor, Outdoor, Greenhouse",excerpt:"Wie der Anbau Terpene und Preis verändert.",image:ph("#F4E2ED","16:9",1600,900),category:"Anbau",date:"Juni 2026",dateTime:"2026-06"}))),
+        h(BC,{href:"#",title:"Vollspektrum oder Isolat?",excerpt:"Was der Unterschied für die Wirkung bedeutet.",image:ph("#D1EFE5","3:2",1800,1200),category:"Wissen",date:"Juli 2026",dateTime:"2026-07"}),
+        h(BC,{href:"#",title:"Indoor, Outdoor, Greenhouse",excerpt:"Wie der Anbau Terpene und Preis verändert.",image:ph("#F4E2ED","3:2",1800,1200),category:"Anbau",date:"Juni 2026",dateTime:"2026-06"}))),
     h("div",null, sec("compact — sidebar, and every card on a phone"),
-      h(BC,{variant:"compact",href:"#",title:"CBD und Schlaf: die Studienlage",image:ph("#D1EFE5","",1600,900),category:"Wissen",date:"April 2026",dateTime:"2026-04"}),
-      h(BC,{variant:"compact",href:"#",title:"Was steht im Laborbericht?",image:ph("#CED4F3","",1600,900),category:"Wissen",date:"März 2026",dateTime:"2026-03"}))));
+      h(BC,{variant:"compact",href:"#",title:"CBD und Schlaf: die Studienlage",image:ph("#D1EFE5","",1800,1200),category:"Wissen",date:"April 2026",dateTime:"2026-04"}),
+      h(BC,{variant:"compact",href:"#",title:"Was steht im Laborbericht?",image:ph("#CED4F3","",1800,1200),category:"Wissen",date:"März 2026",dateTime:"2026-03"}))));
 }
 ReactDOM.createRoot(document.getElementById("root")).render(h(Demo));
 </script>

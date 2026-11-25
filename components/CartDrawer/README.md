@@ -11,6 +11,7 @@ Use `CartDrawer` for the slide-in cart. It composes `QuantitySelector`, `Price`,
 ```
 
 - Header and footer never scroll. The checkout button is the point.
+- The thumbnail is the 128 × 128 copy of the square product photograph, shown at 64px on `light-gray`.
 - Item meta is dark-gray and carries the **size only**.
 - Never collapse the drawer while loading — reserve the height and show skeleton rows.
 - The quantity control swaps minus for a bin at quantity 1, which makes the most common cart action one tap.

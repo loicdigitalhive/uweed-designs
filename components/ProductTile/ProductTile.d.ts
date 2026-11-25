@@ -7,7 +7,8 @@
  */
 export interface ProductTileProps {
   href?: string;
-  /** White-background product PNG. Rendered object-fit: contain, never cover. */
+  /** The 1:1 product photograph, transparent (a 688 × 688 copy of the 2000 × 2000 master).
+   *  Shown whole in a square frame on white: object-fit: contain, never cover. */
   image?: string;
   /** Brand line — Poppins bold, 13px caps, --dark-green. */
   brand: string;

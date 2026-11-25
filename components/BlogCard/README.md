@@ -13,7 +13,7 @@ Use `BlogCard` wherever an article is teased: in the blog archive, in the sideba
 <BlogCard variant="compact" … />
 ```
 
-- **One picture shape, 16:9, everywhere.** The featured image at the top of an article, the card on a desktop and the row on a phone all show the same cut of the same file. Never give a place its own crop or its own shape.
+- **One picture shape, 3:2, everywhere** (1800 × 1200 px master; *Imagery guide*). The featured image at the top of an article, the card on a desktop and the row on a phone all show the same cut of the same file. Never give a place its own crop or its own shape.
 - **On a phone every card is a row:** picture left at 36% of the width, category label above the title, title up to three lines, no teaser sentence. `compact` is that same row at every width.
 - **The category label sits on the picture only on the desktop card.** In the row it moves above the title, because on a small picture it would cover most of it. There it is 12px, one step below the 13px it has on the card, so it stays clearly smaller than the 14px title.
 - One link per card, named by the headline. Never link the image, the title and a "Weiterlesen" separately — that is the defect this component exists to fix.

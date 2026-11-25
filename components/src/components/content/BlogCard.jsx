@@ -11,7 +11,7 @@ import React from "react";
    is laid over the top-left corner of the picture; in the row (the compact
    variant, and every card on a phone) it sits above the title, because on a
    small picture it would cover most of it.
-   The picture is 16:9 in every variant and at every width. */
+   The picture is 3:2 in every variant and at every width. */
 export function BlogCard({
   variant = "standard",
   title,
@@ -31,7 +31,7 @@ export function BlogCard({
   return (
     <article className={cls} {...rest}>
       <div className="uw-post__media">
-        <img src={image} alt="" width="1600" height="900" loading="lazy" />
+        <img src={image} alt="" width="1800" height="1200" loading="lazy" />
       </div>
       <div className="uw-post__body">
         {category ? <span className="uw-post__badge">{category}</span> : null}

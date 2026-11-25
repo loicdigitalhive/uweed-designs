@@ -7,7 +7,7 @@ The design system there is the master. This copy exists so that other tools and 
 Never edit files here: a change made here is overwritten by the next copy. Change the design system,
 and the copy follows.
 
-Copied from version `1795428890-a89f` on 2026-11-24. Last recorded change in the system: 2026-11-20T08:39:37Z (Loic). 20 Nov 2026: hero banner pictures now cover tablets, with no third file. Below 992px (phones, tablets held upright) the hero takes the phone file and the fade from the bottom; from 992px (tablets held sideways, laptops, desktops) the desktop file and its two fades. The switch moved from 1200px to 992px (bs-breakpoint-lg), the step the footer, the filters and the content tabs use. Added: where each file is anchored and what a tablet cuts off. Open item: the hero height limits.
+Copied from version `1795604382-7efb` on 2026-11-25. Last recorded change in the system: 2026-11-25T12:10:00Z (Loic). 25 Nov 2026: product photographs are 1:1, 2000 x 2000, transparent, with one table of smaller copies per family (Imagery guide). The desktop product tile frame is square (was 172:165); ProductTile, PdpGallery and CartDrawer name the copy each uses.
 
 ## What is where
 
@@ -238,7 +238,7 @@ straight from this repository they render blank; the pictures in `previews/` sho
 
 ![ArticleRow](previews/ArticleRow.png)
 
-**[BlogCard](components/BlogCard/)** · Standard, featured and compact. One link per card, one 16:9 picture shape. On a phone every card is the compact row
+**[BlogCard](components/BlogCard/)** · Standard, featured and compact. One link per card, one 3:2 picture shape. On a phone every card is the compact row
 
 ![BlogCard](previews/BlogCard.png)
 
