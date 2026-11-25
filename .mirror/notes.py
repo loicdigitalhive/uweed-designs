@@ -25,7 +25,7 @@ for g in order + [k for k in groups if k not in order]:
 gallery = '\n'.join(lines)
 
 meta = {
-    'source': 'https://claude.ai/artifact/JyZjDAewAEusKwmN6LbvVH',
+    'source': sys.argv[5] if len(sys.argv) > 5 else 'https://claude.ai/artifact/JyZjDAewAEusKwmN6LbvVH',
     'source_version': sys.argv[2],
     'last_change': lc,
     'mirrored_at': sys.argv[3],
