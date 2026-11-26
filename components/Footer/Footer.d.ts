@@ -31,13 +31,13 @@ export interface FooterProps {
   columns?: FooterColumn[];
   /** network: instagram | facebook | telegram | linkedin; label is the accessible name. */
   social?: { heading?: string; links: Array<{ network: "instagram" | "facebook" | "telegram" | "linkedin"; label: string; href: string }> };
-  /** The REVIEWS.io badge as a slot. */
+  /** The REVIEWS.io badge-modern widget (iframe) as a slot, 160px wide. */
   reviews?: { heading?: string; content: React.ReactNode };
   /** The header's language and currency controls, as white pills with a round flag. */
   locale?: { heading?: string; controls: Array<{ label: string; value: string; flag?: React.ReactNode; onClick?: () => void }> };
-  /** Payment marks as white chips; src is the unified mark, else the label is shown. */
+  /** Payment marks: white one-colour files on a 2:1 canvas, shown 28px high on the dark blue, no chip. Without src the label is shown. */
   payments?: { heading?: string; methods: Array<{ label: string; src?: string }> };
-  /** Membership logos as white 2:1 tiles. */
+  /** Membership logos: white one-colour files on a 2:1 canvas, shown 44px high on the dark blue, no tile. */
   memberships?: { heading?: string; items: Array<{ label: string; href: string; src?: string }> };
   legalLinks?: FooterAction[];
   disclaimer?: React.ReactNode;

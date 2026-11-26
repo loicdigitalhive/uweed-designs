@@ -1,21 +1,31 @@
-<!-- @dsCard group="Chrome" height=900 width=1280 subtitle="Dark-blue footer: contact, three link columns, trust band and legal row; one markup, accordions below lg" -->
+<!-- @dsCard group="Chrome" height=900 width=1280 subtitle="Dark-blue footer: contact, three link columns, trust band with the real payment and membership marks, and legal row; one markup, accordions below lg" -->
 <!doctype html>
 <html lang="de">
 <head><meta charset="utf-8"><title>Footer</title>
 <style>body{margin:0;padding:0;background:var(--white);color:var(--font-color);font-family:var(--font-body)}
-.rio{display:inline-flex;align-items:center;gap:3px;margin-top:2px;color:var(--black)}.rio b{font-size:15px;letter-spacing:.02em}.rio small{font-size:10px;font-weight:700}</style></head>
+/* Stand-in for the REVIEWS.io badge-modern widget, drawn to its live shape: a black frame
+   with a white panel (black stars, average, count) over a black strip with the REVIEWS.io mark. */
+.uw-footer a.rio{display:flex;flex-direction:column;width:100%;background:#000;border-radius:12px;overflow:hidden;color:#000;font-family:var(--font-body);text-decoration:none}
+.rio__panel{display:flex;flex-direction:column;align-items:center;gap:4px;padding:12px 8px 10px;background:#fff;border-radius:10px}
+.rio__stars{display:flex;gap:1px;line-height:0}.rio__stars svg{width:18px;height:18px}
+.rio__line{display:block;font-size:10px;line-height:1.2;white-space:nowrap}.rio__line b{font-size:14px;margin-right:3px}
+.rio__mark{display:flex;align-items:center;justify-content:center;gap:3px;height:26px;color:#fff;font-size:12px;font-weight:700;letter-spacing:.02em}.rio__mark small{font-size:8px;font-weight:700}.rio__mark svg{width:12px;height:12px}</style></head>
 <body>
 <div id="root"></div>
 <script>
 var NS = window.UWeedDesignSystem_8df554, h = React.createElement, F = React.Fragment;
 function flagDE(){return h("svg",{viewBox:"0 0 20 20",width:20,height:20,dangerouslySetInnerHTML:{__html:'<defs><clipPath id="fde"><circle cx="10" cy="10" r="10"/></clipPath></defs><g clip-path="url(#fde)"><rect width="20" height="7" fill="#000000"/><rect y="6.6" width="20" height="6.8" fill="#DD0000"/><rect y="13.3" width="20" height="6.7" fill="#FFCE00"/></g>'}});}
 function flagCH(){return h("svg",{viewBox:"0 0 20 20",width:20,height:20,dangerouslySetInnerHTML:{__html:'<defs><clipPath id="fch"><circle cx="10" cy="10" r="10"/></clipPath></defs><g clip-path="url(#fch)"><rect width="20" height="20" fill="#D52B1E"/><path d="M8.2 4.5h3.6v3.7h3.7v3.6h-3.7v3.7H8.2v-3.7H4.5V8.2h3.7z" fill="#FFFFFF"/></g>'}});}
-function star(){return h(NS.Icon,{name:"star-filled",size:16});}
-var badge = h("a",{href:"#",className:"uw-footer__badge","aria-label":"Hervorragend, 2.991 Bewertungen auf REVIEWS.io"},
-  h("b",null,"Hervorragend"),
-  h("span",{className:"uw-footer__stars"},star(),star(),star(),star(),star()),
-  h("span",null,"2.991 Bewertungen"),
-  h("span",{className:"rio"},h(NS.Icon,{name:"star-filled",size:14}),h("b",null,"REVIEWS"),h("small",null,".io")));
+var STAR='M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z';
+function rioStar(fill){var id="rs"+Math.round(fill*100);return h("svg",{viewBox:"0 0 24 24","aria-hidden":"true",dangerouslySetInnerHTML:{__html:'<defs><clipPath id="'+id+'"><rect width="'+(24*fill)+'" height="24"/></clipPath></defs><path d="'+STAR+'" fill="#d6d6d6"/><path d="'+STAR+'" fill="#000" clip-path="url(#'+id+')"/>'}});}
+/* In the shop the slot holds the widget's iframe; the preview draws its shape, with the live figures of November 2026. */
+var badge = h("div",{className:"uw-footer__badge"},
+  h("a",{href:"#",className:"rio","aria-label":"4.85 von 5 Sternen aus 686 Bewertungen auf REVIEWS.io"},
+    h("span",{className:"rio__panel"},
+      h("span",{className:"rio__stars"},rioStar(1),rioStar(1),rioStar(1),rioStar(1),rioStar(.75)),
+      h("span",{className:"rio__line"},h("b",null,"4.85"),"Durchschnittlich"),
+      h("span",{className:"rio__line"},h("b",null,"686"),"Bewertungen")),
+    h("span",{className:"rio__mark"},h("svg",{viewBox:"0 0 24 24","aria-hidden":"true",dangerouslySetInnerHTML:{__html:'<circle cx="12" cy="12" r="11" fill="#fff"/><path d="'+STAR+'" transform="translate(4.8 4.6) scale(.6)" fill="#000"/>'}}),"REVIEWS",h("small",null,".io"))));
 var L = function(t){return {label:t,href:"#"};};
 function Demo(){ return h(NS.Footer,{
   contact:{items:[
@@ -35,8 +45,17 @@ function Demo(){ return h(NS.Footer,{
     {network:"linkedin",label:"uWeed auf LinkedIn",href:"#"}]},
   reviews:{content:badge},
   locale:{controls:[{label:"Sprache",value:"Deutsch",flag:flagDE()},{label:"Währung",value:"CHF",flag:flagCH()}]},
-  payments:{methods:["TWINT","PostFinance","Visa","Mastercard","Apple Pay","Google Pay","QR-Rechnung"].map(function(t){return {label:t};})},
-  memberships:{items:[{label:"IG Hanf",href:"#"},{label:"MedCan",href:"#"}]},
+  payments:{methods:[
+    {label:"TWINT",src:"/_blob/029107f8aa5b1813b6735fc68668c221"},
+    {label:"PostFinance Pay",src:"/_blob/b5c82365b1132d69807bcebcd6d73992"},
+    {label:"Visa",src:"/_blob/f9b17265d183b8af7a37c3f691e15d38"},
+    {label:"Mastercard",src:"/_blob/a99a30db0f48116a6d8fc815698f66ff"},
+    {label:"Apple Pay",src:"/_blob/a1394d4a5eaa53fd04c9210d7e64ec44"},
+    {label:"Google Pay",src:"/_blob/390339b7e007e99b62986eddd81dabd5"},
+    {label:"QR-Rechnung",src:"/_blob/26340effce84de1ce05ad585c121d55d"}]},
+  memberships:{items:[
+    {label:"IG Hanf Schweiz",href:"#",src:"/_blob/591c0d8edc5ebfc69c2644ae19c0c1f6"},
+    {label:"MedCan – Medical Cannabis Verein Schweiz",href:"#",src:"/_blob/928f6a8ed77c96beafc9ff3cb8ca5000"}]},
   legalLinks:[L("Impressum"),L("AGB"),L("Datenschutzrichtlinie"),L("Cookie-Richtlinie"),{label:"Cookie-Einstellungen",onClick:function(){}}],
   disclaimer:h(F,null,h("b",null,"Verkauf nur an Personen ab 18 Jahren.")," Alle Produkte enthalten unter 1% THC und sind in der Schweiz legal. Die von dem Unternehmen verkauften Produkte sind keine Arzneimittel und sind nicht dazu bestimmt, Krankheiten zu diagnostizieren, zu behandeln, zu heilen oder zu verhindern.")
 }); }

@@ -7,7 +7,7 @@ The design system there is the master. This copy exists so that other tools and 
 Never edit files here: a change made here is overwritten by the next copy. Change the design system,
 and the copy follows.
 
-Copied from version `1795604382-7efb` on 2026-11-25. Last recorded change in the system: 2026-11-25T12:10:00Z (Loic). 25 Nov 2026: product photographs are 1:1, 2000 x 2000, transparent, with one table of smaller copies per family (Imagery guide). The desktop product tile frame is square (was 172:165); ProductTile, PdpGallery and CartDrawer name the copy each uses.
+Copied from version `1795686615-c1aa` on 2026-11-26. Last recorded change in the system: 2026-11-26T10:00:00Z (Loic). 26 Nov 2026: Footer uses the real payment and membership marks (white one-colour files on a 2:1 canvas, straight on the dark blue, no chips or tiles) and the REVIEWS.io badge-modern widget's shape (black frame, white panel, REVIEWS.io strip; slot 160px wide).
 
 ## What is where
 
@@ -21,7 +21,7 @@ Every file maps one to one to the design system, at the same path.
 | `components/<Name>/` | Per component: `README.md` (when and how to use it), `<Name>.d.ts` (its props), `preview.html` (the live preview page). |
 | `components/src/` | The component source (JSX). |
 | `api/` | Generated reference: every token, every component's API, the asset lists. |
-| `assets/Icons/`, `assets/Logos/` | The icon set (Tabler, MIT) and the approved logo kit, as files. |
+| `assets/<Group>/` | The design system's images, one folder per group: the icon set (Tabler, MIT), the approved logo kit, imagery and imagery examples. |
 | `ui_kits/uweed-shop/` | The shop prototype screens built from the components. |
 | `design-system.json`, `manifest.json` | The design system's own index and build manifest. |
 | `previews/` | A picture of every preview page, rendered for this copy so the components can be seen on GitHub. Not part of the design system. |
@@ -257,7 +257,7 @@ straight from this repository they render blank; the pictures in `previews/` sho
 
 ### Chrome
 
-**[Footer](components/Footer/)** · Dark-blue footer: contact, three link columns, trust band and legal row; one markup, accordions below lg
+**[Footer](components/Footer/)** · Dark-blue footer: contact, three link columns, trust band with the real payment and membership marks, and legal row; one markup, accordions below lg
 
 ![Footer](previews/Footer.png)
 

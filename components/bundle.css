@@ -1195,10 +1195,10 @@ div.uw-footer__row{cursor:default}
 .uw-footer__icons{display:flex;flex-wrap:wrap;gap:var(--space-s)}
 .uw-footer__soc{display:grid;place-items:center;width:44px;height:44px;border:var(--border-hairline) solid #FFFFFF40;border-radius:50%;transition:background-color var(--motion-fast) var(--motion-ease)}
 @media (hover:hover) and (pointer:fine){.uw-footer__soc:hover{background:#FFFFFF1F}}
-/* Static stand-in for the REVIEWS.io badge, for previews and as the frame the widget fills. */
-.uw-footer .uw-footer__badge{display:inline-flex;flex-direction:column;align-items:center;gap:5px;width:200px;padding:var(--space-m) var(--space-l);background:var(--white);border-radius:var(--radius-card);color:var(--dark-blue);font-size:var(--fs-meta);line-height:1.3;text-align:center}
-.uw-footer__badge>b{font-size:.9375rem}
-.uw-footer__stars{display:inline-flex;gap:2px;color:var(--medium-orange)}
+/* The REVIEWS.io "badge-modern" widget (an iframe) fills this slot. The slot keeps
+   the widget's width and reserves its height, so nothing jumps when it loads late. */
+.uw-footer .uw-footer__badge{display:block;width:160px;min-height:126px}
+.uw-footer__badge iframe{display:block}
 /* Language and currency: the header's white pills with a round flag. */
 .uw-footer__pills{display:flex;flex-wrap:wrap;gap:var(--space-xs)}
 .uw-footer__pill{display:inline-flex;align-items:center;gap:var(--space-xs);height:44px;padding:0 var(--space-s);border:0;border-radius:var(--radius-pill);background:var(--white);color:var(--dark-blue);font-family:var(--ff-body);font-size:.9375rem;font-weight:var(--fw-medium);white-space:nowrap;cursor:pointer;transition:background-color var(--motion-fast) var(--motion-ease)}
@@ -1207,12 +1207,16 @@ div.uw-footer__row{cursor:default}
 .uw-footer__flag svg,.uw-footer__flag img{display:block;width:20px;height:20px;border-radius:50%}
 .uw-footer__pill-text{display:flex;flex-direction:column;gap:1px;line-height:1.1;text-align:left}
 .uw-footer__pill-text small{font-size:12px;font-weight:var(--fw-medium);color:var(--medium-gray)}
-/* Payment marks and membership logos sit on white. */
-.uw-footer__chips{display:flex;flex-wrap:wrap;gap:6px}
-.uw-footer__chip{display:grid;place-items:center;min-width:44px;height:28px;padding:0 var(--space-xs);background:var(--white);border-radius:var(--radius-checkbox);font-size:10px;font-weight:var(--fw-bold);color:var(--dark-blue)}
-.uw-footer__chip img{display:block;height:18px;width:auto}
-.uw-footer .uw-footer__member{display:grid;place-items:center;width:88px;aspect-ratio:var(--brand-logo-frame-ratio);padding:0 4px;background:var(--white);border-radius:var(--radius-checkbox);font-size:11px;font-weight:var(--fw-bold);color:var(--dark-blue);text-align:center}
-.uw-footer__member img{width:100%;height:100%;object-fit:contain}
+/* Payment marks and membership logos are white one-colour files on the dark blue,
+   each on a 2:1 canvas with its own margin: payment marks 28px high, membership
+   logos 44px high. No white chip or tile behind them. Without a file, the name
+   shows as text in the same box. */
+.uw-footer__chips{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px}
+.uw-footer__chips:has(.uw-footer__member){gap:12px 20px}
+.uw-footer__chip{display:grid;place-items:center;min-width:56px;height:28px;font-size:11px;font-weight:var(--fw-bold);color:var(--white)}
+.uw-footer__chip img{display:block;width:auto;height:28px;max-width:64px;object-fit:contain}
+.uw-footer .uw-footer__member{display:grid;place-items:center;min-width:88px;height:44px;font-size:12px;font-weight:var(--fw-bold);color:var(--white);text-align:center;line-height:0}
+.uw-footer__member img{display:block;width:auto;height:44px;max-width:140px;object-fit:contain}
 /* Bottom: logo with the legal links, disclaimer, copyright with "Nach oben". */
 .uw-footer__bottom{display:flex;flex-direction:column;gap:var(--space-m);padding-top:var(--space-l);border-top:var(--border-hairline) solid #FFFFFF26}
 .uw-footer__brand{display:flex;flex-direction:column;align-items:flex-start;gap:var(--space-m)}

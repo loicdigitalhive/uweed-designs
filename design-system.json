@@ -1119,9 +1119,9 @@
   "title": "uWeed Design System",
   "lastChange": {
     "by": "Loic",
-    "at": "2026-11-25T12:10:00Z",
-    "via": "Claude (Claude Code)",
-    "note": "25 Nov 2026: product photographs are 1:1, 2000 x 2000, transparent, with one table of smaller copies per family (Imagery guide). The desktop product tile frame is square (was 172:165); ProductTile, PdpGallery and CartDrawer name the copy each uses."
+    "at": "2026-11-26T10:00:00Z",
+    "via": "Claude (Cowork)",
+    "note": "26 Nov 2026: Footer uses the real payment and membership marks (white one-colour files on a 2:1 canvas, straight on the dark blue, no chips or tiles) and the REVIEWS.io badge-modern widget's shape (black frame, white panel, REVIEWS.io strip; slot 160px wide)."
   },
   "upgraded": {
     "v": 1,
