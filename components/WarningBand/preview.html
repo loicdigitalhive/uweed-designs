@@ -1,0 +1,75 @@
+<!-- @dsCard group="Overlays" height=1500 width=1100 subtitle="The legal warning for smoking products and vapes in advertising: full width at the bottom, 10% of the banner, black on white in a thick frame" -->
+<!doctype html>
+<html lang="de">
+<head><meta charset="utf-8"><title>WarningBand</title>
+<style>
+body{margin:0;padding:16px 20px;background:var(--white);color:var(--font-color);font-family:var(--font-body)}
+.sec{font-family:ui-monospace,monospace;font-size:10px;font-weight:var(--fw-bold);letter-spacing:.08em;text-transform:uppercase;color:var(--medium-blue);margin:18px 0 8px}
+.sec:first-child{margin-top:0}
+.lbl{font-family:ui-monospace,monospace;font-size:10px;color:var(--dark-gray);margin:6px 0 0}
+.row{display:flex;flex-wrap:wrap;gap:20px;align-items:flex-start}
+.banner{position:relative;overflow:hidden;border-radius:var(--radius-inner);background:var(--light-green)}
+.banner__pic{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--dark-green);font-size:13px;text-align:center;padding:0 12px 10%}
+.texts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 16px}
+.strip{position:relative;height:60px;background:var(--light-gray);border-radius:6px;overflow:hidden}
+.strip .uw-warning-band{height:100%}
+</style></head>
+<body>
+<p class="sec">On a banner: 10% of the height, full width, at the bottom</p>
+<div class="row">
+  <div style="width:640px">
+    <div class="banner" style="aspect-ratio:21/9">
+      <div class="banner__pic">Homepage hero, desktop 21:9 (2520 × 1080): picture area</div>
+      <div class="uw-warning-band" role="note" lang="de"><div class="uw-warning-band__field">
+        <p class="uw-warning-band__text">Das Rauchen dieses Produkts schädigt Ihre Gesundheit</p>
+      </div></div>
+    </div>
+    <p class="lbl">DE · flowers, hash, joints · band 108 px of 1080</p>
+  </div>
+  <div style="width:280px">
+    <div class="banner" style="aspect-ratio:3/4">
+      <div class="banner__pic">Homepage hero, phone 3:4 (1320 × 1760)</div>
+      <div class="uw-warning-band" role="note" lang="fr"><div class="uw-warning-band__field">
+        <p class="uw-warning-band__text">Ce produit peut nuire à votre santé et crée une forte dépendance</p>
+      </div></div>
+    </div>
+    <p class="lbl">FR · vapes with nicotine · band 176 px of 1760</p>
+  </div>
+</div>
+<div class="row" style="margin-top:20px">
+  <div style="width:600px">
+    <div class="banner" style="aspect-ratio:3/2">
+      <div class="banner__pic">Campaign email banner 3:2 (1800 × 1200, shown at 600 × 400)</div>
+      <div class="uw-warning-band" role="note" lang="en"><div class="uw-warning-band__field">
+        <p class="uw-warning-band__text">This product can damage your health and is highly addictive</p>
+      </div></div>
+    </div>
+    <p class="lbl">EN · vapes with nicotine · band 120 px of 1200 (in email: part of the image)</p>
+  </div>
+</div>
+
+<p class="sec">Every text, by product shown (compliance Part 6)</p>
+<div id="texts" class="texts"></div>
+<script>
+var T = [
+  ["Flowers, hash, joints, pre-rolls", "Das Rauchen dieses Produkts schädigt Ihre Gesundheit", "Fumer ce produit nuit à votre santé", "Smoking this product damages your health"],
+  ["With tobacco", "Rauchen ist tödlich – hören Sie jetzt auf", "Fumer tue – Arrêtez maintenant", "Smoking kills – quit now"],
+  ["Vapes without nicotine", "Dieses Produkt kann Ihre Gesundheit schädigen", "Ce produit peut nuire à votre santé", "This product can damage your health"],
+  ["Vapes with nicotine", "Dieses Produkt kann Ihre Gesundheit schädigen und macht stark abhängig", "Ce produit peut nuire à votre santé et crée une forte dépendance", "This product can damage your health and is highly addictive"]
+];
+var L = ["de", "fr", "en"], box = document.getElementById("texts");
+T.forEach(function (r) {
+  L.forEach(function (lang, i) {
+    var cell = document.createElement("div");
+    var strip = document.createElement("div"); strip.className = "strip";
+    var band = document.createElement("div"); band.className = "uw-warning-band"; band.setAttribute("role", "note"); band.lang = lang;
+    var field = document.createElement("div"); field.className = "uw-warning-band__field";
+    var p = document.createElement("p"); p.className = "uw-warning-band__text"; p.textContent = r[i + 1];
+    field.appendChild(p); band.appendChild(field); strip.appendChild(band); cell.appendChild(strip);
+    var l = document.createElement("p"); l.className = "lbl"; l.textContent = lang.toUpperCase() + " · " + r[0]; cell.appendChild(l);
+    box.appendChild(cell);
+  });
+});
+</script>
+</body>
+</html>

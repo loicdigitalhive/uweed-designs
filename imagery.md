@@ -14,9 +14,11 @@ One table for every image family. Where any other text disagrees with it, this t
 | City featured image (city pages) | **3:2** | **1800 × 1200 px** production; the current set is delivered at 1536 × 1024 px | PNG | *City imagery* |
 | Campaign email banner | **3:2** | **1800 × 1200 px** master; export **1200 × 800 px**, shown at 600 × 400 px in the 600 px email template | PNG | *Campaign email banners*; check the actual placement before export |
 | Explanatory graphic inside an article | **3:2** | **1800 × 1200 px**; a separate mobile composition, also 3:2, when one bitmap cannot keep the text readable | sRGB PNG | *Explanatory graphics inside articles*, *Inline readability* |
+| Portrait image inside an article | **4:5** portrait | **1200 × 1500 px** | full-colour sRGB PNG | *Images inside articles*; full width on a phone, at most 480 px wide on a desktop |
+| Spot image inside an article | **1:1** square | **800 × 800 px** | full-colour sRGB PNG | *Images inside articles*; full width on a phone, 320 to 400 px wide on a desktop |
 | Category image: category pages, category tiles, carousels, homepage category strip | **1:1** square | **1254 × 1254 px** | transparent RGBA PNG | README, *Imagery*, *Product category images*; *Category visuals* below |
 | Partner brand logo | **2:1** | **1200 × 600 px** | transparent, unless a background is part of the logo | README, *Imagery*, *Partner brand logos* |
-| Homepage banner: every banner in the hero, brand or campaign, 1 to 4 per language | phone **3:4**, desktop **21:9** | **1320 × 1760 px** and **2520 × 1080 px** | WebP, clean (no text, logo or fade), under 150 KB and 250 KB | README, *Imagery*, *Hero banner pictures* |
+| Homepage banner: every banner in the hero, brand or campaign, 1 to 4 per language | phone **3:4**, desktop **21:9** | **1320 × 1760 px** and **2520 × 1080 px** | sRGB PNG master, clean (no text, logo or fade); the site serves it compressed as WebP or AVIF | README, *Imagery*, *Hero banner pictures* |
 | Product photograph: product tile, product page, gallery and cart thumbnails | **1:1** square | **2000 × 2000 px** | transparent RGBA PNG | README, *Imagery*, *Product photographs* |
 | Social feed post: single image and carousel slides on Instagram, Facebook and LinkedIn; Telegram channel posts | **4:5** portrait | **1080 × 1350 px** | sRGB JPG or PNG, under 8 MB | *Social formats* |
 | Social story and reel cover: Instagram and Facebook Stories and Reels, Telegram stories | **9:16** | **1080 × 1920 px** | sRGB JPG or PNG | *Social formats* |
@@ -36,10 +38,16 @@ Every family has one master. Every smaller picture is a copy of it in **the same
 | Partner brand logo | 2:1, 1200 × 600 | 600 × 300 brand row · 400 × 200 small logo |
 | City featured image | 3:2, 1800 × 1200 | the blog copies |
 | Campaign email banner | 3:2, 1800 × 1200 | 1200 × 800 email export |
+| Portrait image inside an article | 4:5, 1200 × 1500 | 960 × 1200 on a desktop (480 px wide) · 780 × 975 full width on a phone |
+| Spot image inside an article | 1:1, 800 × 800 | 800 × 800 on a desktop (up to 400 px wide) · 780 × 780 full width on a phone |
 
 Product photographs taken before 25 November 2026 are portrait (for example 520 × 600 px). They still show whole in a square frame, with space at the sides, but a square thumbnail cuts them. Replace them with square masters as products are re-photographed.
 
 All blog-family pictures share one 3:2 shape (decided 25 November 2026, replacing the earlier 16:9): one source file, the same cut everywhere, no place with its own crop.
+
+### Uploading the master
+
+Decided 26 November 2026, for every picture the website shows. Upload the master itself, never a copy: **PNG** for every picture (full-colour sRGB, or transparent RGBA where the table says so) and **SVG** for vector icons and logos. Upload at least the master size in *Formats at a glance*, at full quality: never a smaller file enlarged to that size, and never a file already compressed or converted to WebP or AVIF. The site's image optimiser (ShortPixel) compresses each upload and makes the WebP or AVIF copies. It can only shrink, so an undersized, enlarged or already compressed upload is what comes out blurred. Social formats go to the platforms as *Social formats* says.
 
 ### Social formats
 
@@ -340,6 +348,16 @@ Small Buds revision: replace the fine sieve, which suggests pollen/hash producti
 *Historical category proposal recovered from the earlier guide. Its landscape format and unfinished branding policy are superseded by the current square export, packaging and category-specific rules above.*
 
 Do not apply effects piece counts, one-human-photo rules or medical imagery by default to category assets. Distinguish whole flowers, small intact buds and leaf-dominant trim accurately. Product and category visuals must not become interchangeable generic hemp-leaf artwork.
+
+## Images inside articles
+
+Decided 26 November 2026. A picture inside an article sits in the text column (at most `measure` wide) and takes one of three shapes; no other shape is used inside an article, and no 16:9.
+
+- **Explanatory graphic, 3:2:** full column width on every screen (*Explanatory graphics inside articles*, below).
+- **Portrait image, 4:5:** full width on a phone; at most 480 px wide on a desktop, centred, so it is never taller than the screen.
+- **Spot image, 1:1:** full width on a phone; 320 to 400 px wide on a desktop, between paragraphs.
+
+Each shape has one master (*Formats at a glance*); the page shows it at the width the placement needs, from the copies the site makes. How portrait and spot images look, and whether they carry a mark or text, is not set yet: it is settled on approved examples (*Visual identity*, opening note and section 4). Until then *Visual identity* sections 1, 3, 5 and 6 apply.
 
 ## Explanatory graphics inside articles
 

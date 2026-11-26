@@ -50,6 +50,7 @@ The logo is always the authentic asset (README, *Logo*), never redrawn, retyped 
 | Explanatory graphic | smile-u mark, bottom right | Title and labels |
 | Category image | smile-u on the packaging | The category name on the packaging; the heading stays in the interface |
 | Product photograph | None: the real packaging only | None |
+| Portrait or spot image inside an article | Set from approved examples | Set from approved examples |
 | Email banner, social post and story, any new placement | Set from approved examples | Set from approved examples |
 
 Positions, insets, type and sizes for each placement are in the *Imagery guide*. When a picture is generated, any title or logo it carries is added or checked against the real asset and the exact approved wording, never left to the generator.

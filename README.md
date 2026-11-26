@@ -349,7 +349,7 @@ The homepage hero banner shows one picture per banner, edge to edge, with the he
 
 - Deliver the picture **clean**: no text, logo, badge, frame or fade in the file. The page adds the fade and the text, so the text stays sharp, translatable and readable by search engines.
 - Opaque, and full bleed to every edge of the canvas.
-- Keep the files light: the first banner's picture is the largest thing the homepage loads. Aim for under 150 KB for the phone file and under 250 KB for the desktop file, as WebP.
+- Upload each file as a PNG master at its full master size (*Imagery guide*, *Uploading the master*). The first banner's picture is the largest thing the homepage loads; the site's image optimiser keeps it light by compressing it and serving WebP or AVIF, so no file-weight target applies to the upload.
 - On a tablet the phone file is enlarged: an iPad held upright asks for about 1640px across and the file has 1320px. The picture is slightly softer there than on a phone. That is the price of having no third file.
 
 **Which screen takes which.** The hero changes at 992px (`bs-breakpoint-lg`), the step at which the footer, the filters and the content tabs change too. Below 992px it has the phone arrangement: the phone file, the text at the bottom, centred and at most 560px wide, and the fade from the bottom. From 992px it has the desktop arrangement: the desktop file, the text on the left, and the fades from the left and the bottom. A tablet held upright (768 to 991px) is treated as a wide phone and a tablet held sideways as a small desktop. No tablet has a file, a fade or an arrangement of its own.

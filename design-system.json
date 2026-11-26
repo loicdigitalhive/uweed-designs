@@ -1094,9 +1094,9 @@
   ],
   "lastChange": {
     "by": "Loic",
-    "at": "2026-11-26T13:13:00Z",
-    "via": "Claude (chat)",
-    "note": "26 Nov 2026: new section Visual identity (mood, kinds of visuals, colour in pictures, logo and text per placement, people, visual hazards, image prompt frame), replacing the visual sections of uweed-copy-rules; email banner listed as open. Earlier: social formats added to the Imagery guide (sizes and focus zones; look to be defined later); link previews left to the platforms for now, a site-made 1200 x 630 copy with white bands noted as the later fix. Also today: Footer marks merged, hero banner focus zone widened, two-CTA rule added."
+    "at": "2026-11-26T14:26:36Z",
+    "via": "Claude (Claude Code)",
+    "note": "26 Nov 2026: WarningBand added: the legal warning for smoking products and vapes in advertising, full width at the bottom, 10% of the banner, thick black frame, black Helvetica Bold on white; DE, FR and EN texts (compliance D21)."
   },
   "layout": "files",
   "libraries": [

@@ -1353,3 +1353,13 @@ div.uw-footer__row{cursor:default}
 @media (hover:hover) and (pointer:fine){.uw-btn--danger:hover{background:var(--white);color:var(--medium-red)}}
 /* Every bin that removes something is red at rest, not only on hover. */
 .uw-qty__down.is-remove{color:var(--medium-red)}
+
+/* WarningBand: the legal warning in advertising for smoking products and vapes
+   (Art. 21 TabPG, Art. 15 TabPV; compliance Part 6, D21). Full width at the bottom of the
+   banner, 10% of its height (so 10% of its area), thick black frame, black bold text on white.
+   The parent banner must be position:relative. Helvetica is the one exception to the type
+   tokens: it is the legal pack-warning look. */
+.uw-warning-band{position:absolute;left:0;right:0;bottom:0;height:10%;box-sizing:border-box;container-type:size;background:#000;z-index:var(--z-raised);pointer-events:none}
+.uw-warning-band__field{position:absolute;inset:10cqh;display:flex;align-items:center;justify-content:center;background:#fff;padding:0 4cqh}
+.uw-warning-band__text{margin:0;color:#000;font-family:"Neue Helvetica","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:700;font-size:min(34cqh,4.2cqw);line-height:1.1;text-align:center;text-wrap:balance;letter-spacing:0;text-transform:none}
+.uw-warning-band__text + .uw-warning-band__text{margin-left:.6em}

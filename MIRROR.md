@@ -7,9 +7,9 @@ The design system there is the master. This copy exists so that other tools and 
 Never edit files here: a change made here is overwritten by the next copy. Change the design system,
 and the copy follows.
 
-Copied from version `1795698771-148e` on 2026-11-26. Last recorded change in the system: 2026-11-26T13:13:00Z (Loic). 26 Nov 2026: new section Visual identity (mood, kinds of visuals, colour in pictures, logo and text per placement, people, visual hazards, image prompt frame), replacing the visual sections of uweed-copy-rules; email banner listed as open. Earlier: social formats added to the Imagery guide (sizes and focus zones; look to be defined later); link previews left to the platforms for now, a site-made 1200 x 630 copy with white bands noted as the later fix. Also today: Footer marks merged, hero banner focus zone widened, two-CTA rule added.
+Copied from version `1795703204-78d6` on 2026-11-26. Last recorded change in the system: 2026-11-26T14:26:36Z (Loic). 26 Nov 2026: WarningBand added: the legal warning for smoking products and vapes in advertising, full width at the bottom, 10% of the banner, thick black frame, black Helvetica Bold on white; DE, FR and EN texts (compliance D21).
 
-Version tag: [`ds-2026-11-26-4`](https://github.com/loicdigitalhive/uweed-designs/releases/tag/ds-2026-11-26-4). Every copy is tagged `ds-<date>`; [all versions](https://github.com/loicdigitalhive/uweed-designs/tags).
+Version tag: [`ds-2026-11-26-5`](https://github.com/loicdigitalhive/uweed-designs/releases/tag/ds-2026-11-26-5). Every copy is tagged `ds-<date>`; [all versions](https://github.com/loicdigitalhive/uweed-designs/tags).
 
 ## What is where
 
@@ -209,6 +209,10 @@ straight from this repository they render blank; the pictures in `previews/` sho
 **[Modal](components/Modal/)** · For a decision that must be made first. Focus lands on the safe action
 
 ![Modal](previews/Modal.png)
+
+**[WarningBand](components/WarningBand/)** · The legal warning for smoking products and vapes in advertising: full width at the bottom, 10% of the banner, black on white in a thick frame
+
+![WarningBand](previews/WarningBand.png)
 
 
 ### Commerce
