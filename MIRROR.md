@@ -7,9 +7,9 @@ The design system there is the master. This copy exists so that other tools and 
 Never edit files here: a change made here is overwritten by the next copy. Change the design system,
 and the copy follows.
 
-Copied from version `1795693146-4352` on 2026-11-26. Last recorded change in the system: 2026-11-26T11:38:56Z (Loic). 26 Nov 2026: merged the Footer update made in the old tools@ copy (real payment and membership marks, REVIEWS.io badge shape). Also today: hero banner focus zone widened and a two-CTA rule added.
+Copied from version `1795694818-0bb2` on 2026-11-26. Last recorded change in the system: 2026-11-26T12:07:00Z (Loic). 26 Nov 2026: social formats added to the Imagery guide (sizes and focus zones; look to be defined later); link previews left to the platforms for now, a site-made 1200 x 630 copy with white bands noted as the later fix. Also today: Footer marks merged, hero banner focus zone widened, two-CTA rule added.
 
-Version tag: [`ds-2026-11-26-2`](https://github.com/loicdigitalhive/uweed-designs/releases/tag/ds-2026-11-26-2). Every copy is tagged `ds-<date>`; [all versions](https://github.com/loicdigitalhive/uweed-designs/tags).
+Version tag: [`ds-2026-11-26-3`](https://github.com/loicdigitalhive/uweed-designs/releases/tag/ds-2026-11-26-3). Every copy is tagged `ds-<date>`; [all versions](https://github.com/loicdigitalhive/uweed-designs/tags).
 
 ## What is where
 

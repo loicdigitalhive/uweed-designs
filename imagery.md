@@ -18,6 +18,11 @@ One table for every image family. Where any other text disagrees with it, this t
 | Partner brand logo | **2:1** | **1200 × 600 px** | transparent, unless a background is part of the logo | README, *Imagery*, *Partner brand logos* |
 | Homepage banner: every banner in the hero, brand or campaign, 1 to 4 per language | phone **3:4**, desktop **21:9** | **1320 × 1760 px** and **2520 × 1080 px** | WebP, clean (no text, logo or fade), under 150 KB and 250 KB | README, *Imagery*, *Hero banner pictures* |
 | Product photograph: product tile, product page, gallery and cart thumbnails | **1:1** square | **2000 × 2000 px** | transparent RGBA PNG | README, *Imagery*, *Product photographs* |
+| Social feed post: single image and carousel slides on Instagram, Facebook and LinkedIn; Telegram channel posts | **4:5** portrait | **1080 × 1350 px** | sRGB JPG or PNG, under 8 MB | *Social formats* |
+| Social story and reel cover: Instagram and Facebook Stories and Reels, Telegram stories | **9:16** | **1080 × 1920 px** | sRGB JPG or PNG | *Social formats* |
+| Social profile picture: all four channels, shown as a circle | **1:1** | **1080 × 1080 px** | sRGB PNG | *Social formats*; README, *Logo* |
+| Facebook page cover | about **2.7:1** | **1702 × 630 px** (twice 851 × 315) | sRGB JPG or PNG | *Social formats* |
+| LinkedIn company page cover | about **6:1** | **1512 × 256 px** | sRGB JPG or PNG, under 3 MB | *Social formats* |
 
 ### Smaller copies
 
@@ -35,6 +40,25 @@ Every family has one master. Every smaller picture is a copy of it in **the same
 Product photographs taken before 25 November 2026 are portrait (for example 520 × 600 px). They still show whole in a square frame, with space at the sides, but a square thumbnail cuts them. Replace them with square masters as products are re-photographed.
 
 All blog-family pictures share one 3:2 shape (decided 25 November 2026, replacing the earlier 16:9): one source file, the same cut everywhere, no place with its own crop.
+
+### Social formats
+
+Sizes decided on 26 November 2026 for uWeed's four channels: Instagram, Facebook, LinkedIn and Telegram (the brand icons in the footer). Two masters cover all four: one feed post and one vertical. The platforms make their own smaller copies, so upload the master as it is.
+
+- **Feed post, 4:5 (1080 × 1350 px).** Meta's recommended feed shape, and accepted by LinkedIn and Telegram. Not 3:4: Instagram does not take 3:4 for ads, so 4:5 keeps every post usable later as a paid ad. Not square: since January 2025 the Instagram profile grid shows tall 3:4 tiles, which cut a square at the sides.
+- **Story and reel cover, 9:16 (1080 × 1920 px).** One file serves organic and paid.
+- **Profile picture, 1:1 (1080 × 1080 px).** The uWeed mark, per the README's *Logo* rules.
+- **Covers.** Facebook page cover 1702 × 630 px; LinkedIn company cover 1512 × 256 px (LinkedIn's current Page spec; many guides still give the older 1128 × 191).
+
+**Focus zones.** As for the homepage banners: the key element (the face, the product, the mark) and any text sit inside the zone; the rest of the canvas may carry the picture.
+
+- **Feed post:** the centred 3:4 area, 1012 × 1350 px. The Instagram profile grid cuts about 34 px from each side.
+- **Story and reel:** everything except the top 14%, the bottom 35% and 6% on each side, where the platforms place their buttons and captions (Meta's guidance). A reel cover also shows on the profile grid as a centred 3:4 crop.
+- **Profile picture:** the central circle.
+- **Facebook cover:** the middle three quarters of the width; phones cut the sides.
+- **LinkedIn cover:** the centre and right; the logo covers the bottom left.
+
+**Look.** Not defined yet: it is set when uWeed posts on social media again. Until then the brand tokens, the README's *Logo* rules and this guide apply, and compliance rules hold for every caption and every word on a picture.
 
 ## Scope
 
@@ -523,7 +547,7 @@ At the earlier visual scale check, short titles, logos and subjects remained cle
 
 ### Decisions still required
 
-Still open: review of the completed category image set; editable production-source workflow and any necessary blog rebuilds at 1800 × 1200; implementation of dedicated mobile inline artwork. The small top-right favicon, inline price typography and transparent category composition were approved on 21 October 2026; the torn-paper base was retired for category visuals on 12 November 2026. The current seven flower category assets are saved under New Style Collage Oct 26 / Categories: https://drive.google.com/drive/folders/1BLJnBVb9BVik22xmiTNpJGWSbs4H_psi. This set includes the main category, Indoor, Outdoor, Greenhouse, Small Buds, Trim, and combined Moonrocks & Ice Rocks. Earlier flower studies are historical references kept in the separate Archive – nicht veröffentlichen folder, with archive-v1- or archive-r2- filename prefixes. They are excluded from the current-image list and must not be published. Keep the main CBD Blüten subtitle/data block lower as requested; do not publish assets automatically.
+Still open: link previews. Facebook, LinkedIn and Telegram show a shared uweed.ch page at 1.91:1 (1200 × 630 px) from its og:image, so a 3:2 blog picture loses 129 px at the top and the bottom and can lose part of the logo top-right or the title bottom-left. Decided on 26 November 2026 to leave it as it is for now (the platforms crop; cosmetic only) and not to change the artwork. When it is taken up, the preferred fix is for the site to make a 1200 × 630 copy of the featured image with the whole picture fitted and `white` bands at the sides, used only in the og:image tag, so the site and the pictures stay unchanged; the look of social posts (*Social formats*); review of the completed category image set; editable production-source workflow and any necessary blog rebuilds at 1800 × 1200; implementation of dedicated mobile inline artwork. The small top-right favicon, inline price typography and transparent category composition were approved on 21 October 2026; the torn-paper base was retired for category visuals on 12 November 2026. The current seven flower category assets are saved under New Style Collage Oct 26 / Categories: https://drive.google.com/drive/folders/1BLJnBVb9BVik22xmiTNpJGWSbs4H_psi. This set includes the main category, Indoor, Outdoor, Greenhouse, Small Buds, Trim, and combined Moonrocks & Ice Rocks. Earlier flower studies are historical references kept in the separate Archive – nicht veröffentlichen folder, with archive-v1- or archive-r2- filename prefixes. They are excluded from the current-image list and must not be published. Keep the main CBD Blüten subtitle/data block lower as requested; do not publish assets automatically.
 
 ## Remaining blog imagery outside effects
 
