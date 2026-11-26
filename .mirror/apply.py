@@ -15,7 +15,7 @@ import shutil
 import sys
 
 repo, src, assets = sys.argv[1], sys.argv[2], sys.argv[3]
-KEEP = {'.git', '.mirror'}
+KEEP = {'.git', '.mirror', '.github'}
 
 if not os.path.exists(os.path.join(src, 'design-system.json')):
     sys.exit('design-system.json missing from the download; nothing changed')

@@ -1,0 +1,59 @@
+# Tags every copy of the design system on main, so each version can be found later.
+# Added because the nightly routine's session may push commits but not tags.
+# It never moves or deletes a tag.
+name: Tag design system copy
+
+on:
+  push:
+    branches: [main]
+    paths: ['.design-system-mirror.json']
+  workflow_dispatch:
+    inputs:
+      commit:
+        description: 'Commit on main to tag (leave empty for the latest)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tag-design-system-copy
+  cancel-in-progress: false
+
+jobs:
+  tag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.commit || github.sha }}
+          fetch-depth: 0
+
+      - name: Create the ds- tag
+        run: |
+          set -euo pipefail
+          git fetch --tags origin
+
+          if ! git merge-base --is-ancestor HEAD origin/main; then
+            echo "This commit is not on main; copies on other branches are not tagged."; exit 1
+          fi
+          existing="$(git tag --points-at HEAD --list 'ds-*')"
+          if [ -n "$existing" ]; then
+            echo "Already tagged: $existing"; exit 0
+          fi
+
+          read_json() { python3 -c "import json,sys; d=json.load(open('.design-system-mirror.json', encoding='utf-8')); print(eval(sys.argv[1]))" "$1"; }
+          VERSION="$(read_json "d['source_version']")"
+          NOTE="$(read_json "d['last_change']['note']")"
+          DATE="$(read_json "d['mirrored_at']")"
+
+          base="ds-$DATE"; name="$base"; n=2
+          while git ls-remote --exit-code --tags origin "refs/tags/$name" >/dev/null; do
+            name="$base-$n"; n=$((n+1))
+          done
+
+          git -c user.name="Claude (design system mirror)" -c user.email="tools@uweed.ch" \
+            tag -a "$name" -m "Design system version $VERSION" -m "$NOTE"
+          git push origin "refs/tags/$name"
+          echo "Tagged $(git rev-parse --short HEAD) as $name"
