@@ -30,7 +30,7 @@ meta = {
     'last_change': lc,
     'mirrored_at': sys.argv[3],
     'files': int(sys.argv[4]),
-    'assets': {g: len([f for f in os.listdir(R + '/assets/' + g) if f != 'README.md']) for g in ('Icons', 'Logos')},
+    'assets': {g: len([f for f in os.listdir(R + '/assets/' + g) if f != 'README.md']) for g in sorted(os.listdir(R + '/assets')) if os.path.isdir(R + '/assets/' + g)},
 }
 json.dump(meta, open(R + '/.design-system-mirror.json', 'w'), indent=2, ensure_ascii=False)
 
@@ -57,7 +57,7 @@ Every file maps one to one to the design system, at the same path.
 | `components/<Name>/` | Per component: `README.md` (when and how to use it), `<Name>.d.ts` (its props), `preview.html` (the live preview page). |
 | `components/src/` | The component source (JSX). |
 | `api/` | Generated reference: every token, every component's API, the asset lists. |
-| `assets/Icons/`, `assets/Logos/` | The icon set (Tabler, MIT) and the approved logo kit, as files. |
+| `assets/<Group>/` | The design system's images, one folder per group: the icon set (Tabler, MIT), the approved logo kit, imagery and imagery examples. |
 | `ui_kits/uweed-shop/` | The shop prototype screens built from the components. |
 | `design-system.json`, `manifest.json` | The design system's own index and build manifest. |
 | `previews/` | A picture of every preview page, rendered for this copy so the components can be seen on GitHub. Not part of the design system. |
