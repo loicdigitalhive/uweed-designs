@@ -1,8 +1,30 @@
-import json, os, re, sys
+import json, os, re, subprocess, sys
 
+# Usage: notes.py <repo> <version> <YYYY-MM-DD> <files> [<artifact link>] [<tag>]
+# <tag> is the ds-<date> tag this copy will get. Without it, MIRROR.md names
+# the newest ds- tag already in the checkout, if there is one.
 R = sys.argv[1]
 ds = json.load(open(R + '/design-system.json'))
 lc = ds.get('lastChange', {})
+TAG_RE = re.compile(r'^ds-(\d{4}-\d{2}-\d{2})(?:-(\d+))?$')
+
+
+def newest_tag():
+    try:
+        out = subprocess.run(['git', '-C', R, 'tag', '--list', 'ds-*'], capture_output=True, text=True).stdout
+    except OSError:
+        return ''
+    tags = [t for t in out.split() if TAG_RE.match(t)]
+    key = lambda t: (TAG_RE.match(t).group(1), int(TAG_RE.match(t).group(2) or 1))
+    return max(tags, key=key) if tags else ''
+
+
+tag = sys.argv[6] if len(sys.argv) > 6 and sys.argv[6] else newest_tag()
+if tag and not TAG_RE.match(tag):
+    sys.exit('tag must look like ds-YYYY-MM-DD or ds-YYYY-MM-DD-2: ' + tag)
+tag_line = ('\n\nVersion tag: [`{t}`](https://github.com/loicdigitalhive/uweed-designs/releases/tag/{t}). '
+            'Every copy is tagged `ds-<date>`; [all versions](https://github.com/loicdigitalhive/uweed-designs/tags).'
+            ).format(t=tag) if tag else ''
 
 groups = {}
 for c in sorted(os.listdir(R + '/components')):
@@ -43,7 +65,7 @@ The design system there is the master. This copy exists so that other tools and 
 Never edit files here: a change made here is overwritten by the next copy. Change the design system,
 and the copy follows.
 
-Copied from version `{version}` on {date}. Last recorded change in the system: {at} ({by}). {note}
+Copied from version `{version}` on {date}. Last recorded change in the system: {at} ({by}). {note}{tag_line}
 
 ## What is where
 
@@ -69,7 +91,7 @@ straight from this repository they render blank; the pictures in `previews/` sho
 ## All components at a glance
 {gallery}
 """.format(source=meta['source'], version=meta['source_version'], date=meta['mirrored_at'],
-           at=lc.get('at', ''), by=lc.get('by', ''), note=lc.get('note', ''), gallery=gallery)
+           at=lc.get('at', ''), by=lc.get('by', ''), note=lc.get('note', ''), tag_line=tag_line, gallery=gallery)
 open(R + '/MIRROR.md', 'w', encoding='utf-8').write(mirror)
 
 open(R + '/CLAUDE.md', 'w', encoding='utf-8').write("""# uWeed Design System (read-only copy)
