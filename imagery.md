@@ -16,8 +16,7 @@ One table for every image family. Where any other text disagrees with it, this t
 | Explanatory graphic inside an article | **3:2** | **1800 × 1200 px**; a separate mobile composition, also 3:2, when one bitmap cannot keep the text readable | sRGB PNG | *Explanatory graphics inside articles*, *Inline readability* |
 | Category image: category pages, category tiles, carousels, homepage category strip | **1:1** square | **1254 × 1254 px** | transparent RGBA PNG | README, *Imagery*, *Product category images*; *Category visuals* below |
 | Partner brand logo | **2:1** | **1200 × 600 px** | transparent, unless a background is part of the logo | README, *Imagery*, *Partner brand logos* |
-| Homepage hero banner | phone **3:4**, desktop **21:9** | **1320 × 1760 px** and **2520 × 1080 px** | WebP, clean (no text, logo or fade), under 150 KB and 250 KB | README, *Imagery*, *Hero banner pictures* |
-| Other homepage banners | not decided | — | — | open: H5 or H6 (*Decisions still required*) |
+| Homepage banner: every banner in the hero, brand or campaign, 1 to 4 per language | phone **3:4**, desktop **21:9** | **1320 × 1760 px** and **2520 × 1080 px** | WebP, clean (no text, logo or fade), under 150 KB and 250 KB | README, *Imagery*, *Hero banner pictures* |
 | Product photograph: product tile, product page, gallery and cart thumbnails | **1:1** square | **2000 × 2000 px** | transparent RGBA PNG | README, *Imagery*, *Product photographs* |
 
 ### Smaller copies
@@ -264,7 +263,7 @@ Use the same premium photographic, paper and editorial-engraving materials for p
 
 Use the white torn-paper title bottom-left and authentic horizontal logo top-right. Put supporting copy, conditions and clickable CTAs in native email blocks where appropriate. Do not add photographic insets or rounded logo backings merely because older boards show them.
 
-Shared master: 3:2 at 1800 × 1200 px. Standard email export from the shared guide: 1200 × 800 px, displayed at 600 × 400 px in the then-current 600 px-wide template. Check the actual campaign placement before export; later campaign-specific formats do not change the effects header ratio. Homepage banner rules were not finalised in this imagery work.
+Shared master: 3:2 at 1800 × 1200 px. Standard email export from the shared guide: 1200 × 800 px, displayed at 600 × 400 px in the then-current 600 px-wide template. Check the actual campaign placement before export; later campaign-specific formats do not change the effects header ratio. A homepage campaign banner is not a resized email banner: it is a banner in the hero, made to the hero format (README, *Imagery*, *Hero banner pictures*).
 
 ## Category visuals
 
@@ -524,7 +523,7 @@ At the earlier visual scale check, short titles, logos and subjects remained cle
 
 ### Decisions still required
 
-Still open: final choice between homepage banner H5 and H6; review of the completed category image set; editable production-source workflow and any necessary blog rebuilds at 1800 × 1200; implementation of dedicated mobile inline artwork. The small top-right favicon, inline price typography and transparent category composition were approved on 21 October 2026; the torn-paper base was retired for category visuals on 12 November 2026. The current seven flower category assets are saved under New Style Collage Oct 26 / Categories: https://drive.google.com/drive/folders/1BLJnBVb9BVik22xmiTNpJGWSbs4H_psi. This set includes the main category, Indoor, Outdoor, Greenhouse, Small Buds, Trim, and combined Moonrocks & Ice Rocks. Earlier flower studies are historical references kept in the separate Archive – nicht veröffentlichen folder, with archive-v1- or archive-r2- filename prefixes. They are excluded from the current-image list and must not be published. Keep the main CBD Blüten subtitle/data block lower as requested; do not publish assets automatically.
+Still open: review of the completed category image set; editable production-source workflow and any necessary blog rebuilds at 1800 × 1200; implementation of dedicated mobile inline artwork. The small top-right favicon, inline price typography and transparent category composition were approved on 21 October 2026; the torn-paper base was retired for category visuals on 12 November 2026. The current seven flower category assets are saved under New Style Collage Oct 26 / Categories: https://drive.google.com/drive/folders/1BLJnBVb9BVik22xmiTNpJGWSbs4H_psi. This set includes the main category, Indoor, Outdoor, Greenhouse, Small Buds, Trim, and combined Moonrocks & Ice Rocks. Earlier flower studies are historical references kept in the separate Archive – nicht veröffentlichen folder, with archive-v1- or archive-r2- filename prefixes. They are excluded from the current-image list and must not be published. Keep the main CBD Blüten subtitle/data block lower as requested; do not publish assets automatically.
 
 ## Remaining blog imagery outside effects
 

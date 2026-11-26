@@ -1,13 +1,15 @@
 # About this repository
 
 This repository is a read-only copy of the **uWeed Design System**, which lives in Claude Design:
-https://claude.ai/artifact/JyZjDAewAEusKwmN6LbvVH
+https://claude.ai/artifact/BvqAVXAFx2W5hexCz9ETxw
 
 The design system there is the master. This copy exists so that other tools and people can read it.
 Never edit files here: a change made here is overwritten by the next copy. Change the design system,
 and the copy follows.
 
-Copied from version `1795686615-c1aa` on 2026-11-26. Last recorded change in the system: 2026-11-26T10:00:00Z (Loic). 26 Nov 2026: Footer uses the real payment and membership marks (white one-colour files on a 2:1 canvas, straight on the dark blue, no chips or tiles) and the REVIEWS.io badge-modern widget's shape (black frame, white panel, REVIEWS.io strip; slot 160px wide).
+Copied from version `1795693146-4352` on 2026-11-26. Last recorded change in the system: 2026-11-26T11:38:56Z (Loic). 26 Nov 2026: merged the Footer update made in the old tools@ copy (real payment and membership marks, REVIEWS.io badge shape). Also today: hero banner focus zone widened and a two-CTA rule added.
+
+Version tag: [`ds-2026-11-26-2`](https://github.com/loicdigitalhive/uweed-designs/releases/tag/ds-2026-11-26-2). Every copy is tagged `ds-<date>`; [all versions](https://github.com/loicdigitalhive/uweed-designs/tags).
 
 ## What is where
 

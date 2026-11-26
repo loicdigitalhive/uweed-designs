@@ -4,6 +4,7 @@
   "namespace": "UWeedDesignSystem_8df554",
   "files": [
     "assets/Icons/README.md",
+    "assets/Imagery examples/README.md",
     "assets/Logos/README.md",
     "components/Accordion/Accordion.d.ts",
     "components/Accordion/README.md",
@@ -46,6 +47,7 @@
     "components/Icon/README.md",
     "components/IconList/IconList.d.ts",
     "components/IconList/README.md",
+    "components/Imagery/README.md",
     "components/Input/Input.d.ts",
     "components/Input/README.md",
     "components/Link/Link.d.ts",
@@ -96,15 +98,15 @@
     "components/StockStatus/StockStatus.d.ts",
     "components/TabNav/README.md",
     "components/TabNav/TabNav.d.ts",
-    "components/Toast/README.md",
-    "components/Toast/Toast.d.ts",
     "components/Tooltip/README.md",
     "components/Tooltip/Tooltip.d.ts",
     "components/Typography/README.md",
+    "components/VerticalColours/README.md",
     "components/bundle.css",
     "components/bundle.js",
     "components/lib/react-dom.production.min.js",
     "components/lib/react.production.min.js",
+    "imagery.md",
     "tokens.css",
     "ui_kits/uweed-shop/BlogScreen.jsx",
     "ui_kits/uweed-shop/CartScreen.jsx",
@@ -179,7 +181,7 @@
     {
       "name": "IconList",
       "group": "Content",
-      "summary": "Use IconList for a short set of facts about uWeed or a brand: the \"why uWeed\" band on the homepage or a category page, the facts on a brand page."
+      "summary": "Use IconList for a short set of facts about uWeed or a brand: the \"why uWeed\" band on the homepage or a category page, the facts on a brand page, and the band…"
     },
     {
       "name": "NewsletterBlock",
@@ -224,7 +226,7 @@
     {
       "name": "Accordion",
       "group": "Disclosure",
-      "summary": "Use Accordion + AccordionItem for FAQ blocks, PDP tabs on mobile, category text and footer columns on mobile."
+      "summary": "Use Accordion + AccordionItem for FAQ blocks, PDP tabs on mobile and category text."
     },
     {
       "name": "AccordionItem"
@@ -232,7 +234,7 @@
     {
       "name": "ContentTabs",
       "group": "Disclosure",
-      "summary": "Use ContentTabs for the PDP description / lab report / shipping panels on desktop."
+      "summary": "Use ContentTabs for the product page sections (description, specifications, ingredients, use, storage, safety) from 992px (bs-breakpoint-lg) up."
     },
     {
       "name": "FilterPill",
@@ -285,11 +287,6 @@
       "name": "StockStatus",
       "group": "Feedback",
       "summary": "Use StockStatus on a PDP below the variation selector."
-    },
-    {
-      "name": "Toast",
-      "group": "Feedback",
-      "summary": "Use Toast to confirm an action that succeeded and needs no decision."
     },
     {
       "name": "Checkbox",
@@ -367,7 +364,7 @@
     {
       "name": "Modal",
       "group": "Overlays",
-      "summary": "Use Modal rarely — a destructive confirmation or a required choice."
+      "summary": "Use Modal for three things only: the age gate (AgeGate), login from the header account icon, and confirming a deletion."
     },
     {
       "name": "ColourPairings",
@@ -385,6 +382,12 @@
       "name": "ContentTable",
       "group": "Content",
       "summary": "A multi-column table for editorial content: comparisons, reference data, specs and figures inside blog articles and category pages."
+    },
+    {
+      "name": "Imagery",
+      "group": "Foundations",
+      "summary": "Category images and partner logos: canvas, framing and display (November 2026).",
+      "page": true
     },
     {
       "name": "MotionAndStacking",
@@ -415,6 +418,12 @@
       "group": "Foundations",
       "summary": "Poppins for headings, DM Sans for everything else, fluid between 375 and 1280px.",
       "page": true
+    },
+    {
+      "name": "VerticalColours",
+      "group": "Foundations",
+      "summary": "Five shop verticals, one colour family each, for category imagery and creative assets (proposed, November 2026).",
+      "page": true
     }
   ],
   "assetGroups": [
@@ -444,105 +453,185 @@
         "uweed_mark_light-green.svg",
         "uweed_mark_light-pink.svg",
         "uweed_mark_black.svg",
+        "uweed_badge_dark-blue.svg",
+        "uweed_badge_white.svg",
+        "uweed_badge_dark-green.svg",
+        "uweed_badge_dark-pink.svg",
+        "uweed_badge_light-blue.svg",
+        "uweed_badge_light-green.svg",
+        "uweed_badge_light-pink.svg",
+        "uweed_badge_black.svg",
+        "uweed_stamp_dark-blue.svg",
+        "uweed_stamp_white.svg",
+        "uweed_stamp_dark-green.svg",
+        "uweed_stamp_dark-pink.svg",
+        "uweed_stamp_light-blue.svg",
+        "uweed_stamp_light-green.svg",
+        "uweed_stamp_light-pink.svg",
+        "uweed_stamp_black.svg",
         "uweed_favicon_32.png",
         "uweed_favicon_180.png"
       ],
       "files": [
         {
           "path": "assets/Logos/uweed_logo_horizontal_dark-blue.svg",
-          "id": "1d680124e60ec7d4840c1826d71ebf89"
+          "id": "d21e4f48703b9f27d4bfcba52e7d2088"
         },
         {
           "path": "assets/Logos/uweed_logo_horizontal_white.svg",
-          "id": "0a319c04304c116e0b6bad8bb8710802"
+          "id": "29846de42536b4d3665ec59f766dd0e9"
         },
         {
           "path": "assets/Logos/uweed_logo_horizontal_dark-green.svg",
-          "id": "5a994bbd5eaba9cdd646c54d3656019f"
+          "id": "1bbd94eaf8d05b0147e308b2aba6291d"
         },
         {
           "path": "assets/Logos/uweed_logo_horizontal_dark-pink.svg",
-          "id": "a261c6f54462808d47cb1ad3244a1351"
+          "id": "1c950f86ffc5cef7159e81f55bbc99b5"
         },
         {
           "path": "assets/Logos/uweed_logo_horizontal_light-blue.svg",
-          "id": "f37dcffa095d30100972b7397f4b6db4"
+          "id": "a8351b53475f06449d8ffb56efe95848"
         },
         {
           "path": "assets/Logos/uweed_logo_horizontal_light-green.svg",
-          "id": "1ce538cd04f1f7e3e1bb04a917ad9758"
+          "id": "aa8b9d9e95acd3fa761221cf93f54e8f"
         },
         {
           "path": "assets/Logos/uweed_logo_horizontal_light-pink.svg",
-          "id": "7da9c91446e40b153e49587f1d9b3375"
+          "id": "718f320252c00ed32f1dd9d90832dc8a"
         },
         {
           "path": "assets/Logos/uweed_logo_horizontal_black.svg",
-          "id": "4b8aa58033ffcca235879dae9d5e17b7"
+          "id": "e8ca2a82223c67fecc08dd8f37e89a7a"
         },
         {
           "path": "assets/Logos/uweed_logo_horizontal-tagline_dark-blue.svg",
-          "id": "d6d7600b6d27b0e8890808c5d8fdedb5"
+          "id": "684e6d05464c8f8175941945946fbe80"
         },
         {
           "path": "assets/Logos/uweed_logo_horizontal-tagline_white.svg",
-          "id": "ccac4413c3b24ecdda66aac2abd14406"
+          "id": "a9572208c9fc3d13edf21b4c27de9353"
         },
         {
           "path": "assets/Logos/uweed_logo_horizontal-tagline_dark-green.svg",
-          "id": "3b035eec7bcf81e622c24b46cb5685f4"
+          "id": "b9e2359db5adac073e9ebdbbc527db69"
         },
         {
           "path": "assets/Logos/uweed_logo_horizontal-tagline_dark-pink.svg",
-          "id": "0e1237cc24508748418b4baea493719e"
+          "id": "d55cef0291ac69eee59daffab4b901db"
         },
         {
           "path": "assets/Logos/uweed_logo_horizontal-tagline_light-blue.svg",
-          "id": "cea0226ca91871d587111583cc5d4960"
+          "id": "85baecfa5c6342c093b9da3c09934e59"
         },
         {
           "path": "assets/Logos/uweed_logo_horizontal-tagline_light-green.svg",
-          "id": "24f14884c23f5b12027be4f1554a5992"
+          "id": "2d39378ed0d876ae4655b30d56453640"
         },
         {
           "path": "assets/Logos/uweed_logo_horizontal-tagline_light-pink.svg",
-          "id": "dfb2726dd48c8cb0e2711a8be3dec98f"
+          "id": "3a16118c1a004e2c779186093e635cd4"
         },
         {
           "path": "assets/Logos/uweed_logo_horizontal-tagline_black.svg",
-          "id": "fb8d049c9e39053a68d8161d0f8facde"
+          "id": "b44a8edddc15e92ceb32277eb60aefe6"
         },
         {
           "path": "assets/Logos/uweed_mark_dark-blue.svg",
-          "id": "af965f7b92a6cb6e830c91531ab5a92a"
+          "id": "02b76e266ace61a913fdbfba8a8e7132"
         },
         {
           "path": "assets/Logos/uweed_mark_white.svg",
-          "id": "db3936cf53c4dd55796299bec5156483"
+          "id": "31399ab2f7d6891be223a796615df79b"
         },
         {
           "path": "assets/Logos/uweed_mark_light-blue.svg",
-          "id": "efb085173eccb40bc8ddb3a0c0ca57b0"
+          "id": "fd64b412e9c30776f0884a22daa5ea1a"
         },
         {
           "path": "assets/Logos/uweed_mark_light-green.svg",
-          "id": "e3287947cc2fcfd789873c1b1aaf21b3"
+          "id": "71f5b5fa4bbd1d9adf44b6eac7cfffda"
         },
         {
           "path": "assets/Logos/uweed_mark_light-pink.svg",
-          "id": "e44b252e16c25076af91e5a9c7fde55e"
+          "id": "231a311aa1e34c296f7ac16a215b55f2"
         },
         {
           "path": "assets/Logos/uweed_mark_black.svg",
-          "id": "03ec017362e19187358326d522be724b"
+          "id": "d15c112edf88914c5b8a6fd243cd617b"
+        },
+        {
+          "path": "assets/Logos/uweed_badge_dark-blue.svg",
+          "id": "4b07abd5bc10da003c08449809cd7e07"
+        },
+        {
+          "path": "assets/Logos/uweed_badge_white.svg",
+          "id": "be336b78643ffb89f9a32ad0ddc7f739"
+        },
+        {
+          "path": "assets/Logos/uweed_badge_dark-green.svg",
+          "id": "ba9908a02498976888338b84ac6c9b10"
+        },
+        {
+          "path": "assets/Logos/uweed_badge_dark-pink.svg",
+          "id": "941130ac29bfda8901a9520cec18f457"
+        },
+        {
+          "path": "assets/Logos/uweed_badge_light-blue.svg",
+          "id": "f776506d9b5cbcd8ff58d1a0d7f36be1"
+        },
+        {
+          "path": "assets/Logos/uweed_badge_light-green.svg",
+          "id": "c97e8affaa123fcdbb57ca84957b35d2"
+        },
+        {
+          "path": "assets/Logos/uweed_badge_light-pink.svg",
+          "id": "cc157d9fccc78fe5b23b1c3f9cc24f52"
+        },
+        {
+          "path": "assets/Logos/uweed_badge_black.svg",
+          "id": "e91751c83cc88c30e68fb468aae82c0b"
+        },
+        {
+          "path": "assets/Logos/uweed_stamp_dark-blue.svg",
+          "id": "af188d08ce583878d9fa46f3a2da29fc"
+        },
+        {
+          "path": "assets/Logos/uweed_stamp_white.svg",
+          "id": "18d0960eea7db159deebba24c9260eb0"
+        },
+        {
+          "path": "assets/Logos/uweed_stamp_dark-green.svg",
+          "id": "af7e6fb0adbbf9b9aafc1a3d7bfe25ea"
+        },
+        {
+          "path": "assets/Logos/uweed_stamp_dark-pink.svg",
+          "id": "23fe6170a9abb0025d5cfc81e061b616"
+        },
+        {
+          "path": "assets/Logos/uweed_stamp_light-blue.svg",
+          "id": "0c8ab15f0f39f86fbebbc3c721342648"
+        },
+        {
+          "path": "assets/Logos/uweed_stamp_light-green.svg",
+          "id": "b5c4817f0027953a408fe6e4e85c5e82"
+        },
+        {
+          "path": "assets/Logos/uweed_stamp_light-pink.svg",
+          "id": "3c2248d66178d244448018870f321ad1"
+        },
+        {
+          "path": "assets/Logos/uweed_stamp_black.svg",
+          "id": "4994330b9d1c7dfbf71eb4857257f414"
         },
         {
           "path": "assets/Logos/uweed_favicon_32.png",
-          "id": "4016c7f1f797b5cad1f7e3cb2316911d"
+          "id": "101ffef925c358731e521b60b47af885"
         },
         {
           "path": "assets/Logos/uweed_favicon_180.png",
-          "id": "1c34ee6ef7d98d1ed417e4259ce6ee5c"
+          "id": "07ea474922e26276fd182c977abcd219"
         }
       ]
     },
@@ -555,6 +644,10 @@
         "alert-triangle.svg",
         "arrow-back-up.svg",
         "arrows-sort.svg",
+        "brand-facebook.svg",
+        "brand-instagram.svg",
+        "brand-linkedin.svg",
+        "brand-telegram.svg",
         "cannabis.svg",
         "check.svg",
         "chevron-down.svg",
@@ -569,13 +662,18 @@
         "filter.svg",
         "flask.svg",
         "heart.svg",
+        "heart-filled.svg",
+        "help-circle.svg",
         "info-circle.svg",
         "leaf.svg",
+        "link.svg",
         "lock.svg",
         "mail.svg",
         "map-pin.svg",
         "menu-2.svg",
+        "message-circle.svg",
         "minus.svg",
+        "news.svg",
         "package.svg",
         "phone.svg",
         "plus.svg",
@@ -591,6 +689,7 @@
         "trash.svg",
         "truck.svg",
         "user.svg",
+        "user-check.svg",
         "world.svg",
         "x.svg",
         "zoom-in.svg"
@@ -598,179 +697,415 @@
       "files": [
         {
           "path": "assets/Icons/adjustments-horizontal.svg",
-          "id": "5dfbe0c60e65e773013d4ed3c35e33a2"
+          "id": "b4e1dde4c7ee47fa910af34c97296c70"
         },
         {
           "path": "assets/Icons/alert-circle.svg",
-          "id": "7cf0a80c9c7bbb157c370169f3812654"
+          "id": "9c9896b49c1e22007a64785f848b9019"
         },
         {
           "path": "assets/Icons/alert-triangle.svg",
-          "id": "e29a4b0f381ee7d5121c04efa2f6f966"
+          "id": "ebd78df36e2baa39f9b007d11c3daf36"
         },
         {
           "path": "assets/Icons/arrow-back-up.svg",
-          "id": "f3bf69d944fff8762885ecc4ed8579e1"
+          "id": "0f9ef6c63bbd8cd86b75a4d253c73806"
         },
         {
           "path": "assets/Icons/arrows-sort.svg",
-          "id": "a6ab27398bddae514a080197a4e187a9"
+          "id": "250755e908e229dff351a9c88798ccd7"
+        },
+        {
+          "path": "assets/Icons/brand-facebook.svg",
+          "id": "d8305b1f4f0833ff4e4e4eb972b0d907"
+        },
+        {
+          "path": "assets/Icons/brand-instagram.svg",
+          "id": "6aca23740953a9fe01eb0d0e8759bbed"
+        },
+        {
+          "path": "assets/Icons/brand-linkedin.svg",
+          "id": "c132b78e57eefdefee1fd0c3ad7e76ff"
+        },
+        {
+          "path": "assets/Icons/brand-telegram.svg",
+          "id": "779f24c15bf41e81b951e98aad077eb5"
         },
         {
           "path": "assets/Icons/cannabis.svg",
-          "id": "02f712d520b29e2fc69a3e476e4bba9a"
+          "id": "6f0875f807d9dd5a921bc45c905d927e"
         },
         {
           "path": "assets/Icons/check.svg",
-          "id": "8299ead0e5b5d3edf116a297423244a8"
+          "id": "e861ef53e52d80aece5b4b37b098683a"
         },
         {
           "path": "assets/Icons/chevron-down.svg",
-          "id": "f6a3ddd27a205bef8c71bffbb06aaa2c"
+          "id": "4ea00c4ba536d2baedeceb5255cb0cf2"
         },
         {
           "path": "assets/Icons/chevron-left.svg",
-          "id": "c14805ef648b65d984f0d2bc0b2cfc0a"
+          "id": "f16ed7a026e071367766182fcff322e3"
         },
         {
           "path": "assets/Icons/chevron-right.svg",
-          "id": "1462fc6bc8371ae5f1bf6de5b25fe197"
+          "id": "b429e56cc63eaf7ad8d88fecdc621ea1"
         },
         {
           "path": "assets/Icons/chevron-up.svg",
-          "id": "46e6fe06cc182d449883caad5ab69ba7"
+          "id": "7af30d9fde62b05a887800bfcb7a67b5"
         },
         {
           "path": "assets/Icons/circle-check.svg",
-          "id": "513e59acb283bbeda8afc43a6a0f8cf3"
+          "id": "98ac51a5a72a352d021ed6c0f693b1d8"
         },
         {
           "path": "assets/Icons/circle-x.svg",
-          "id": "8e4d4d602cbd762a4602374b7daefe77"
+          "id": "c58b32af9ba65ae964e0a8bab33a1226"
         },
         {
           "path": "assets/Icons/clock.svg",
-          "id": "26cb0396874003ec1f28db14ae348351"
+          "id": "063d6d752aec7b966e7bfe78fa9528bd"
         },
         {
           "path": "assets/Icons/credit-card.svg",
-          "id": "28c3b1415f146b125240e66c85d70acd"
+          "id": "a72b0f3f97184ee740c9db39dd2f4fa1"
         },
         {
           "path": "assets/Icons/external-link.svg",
-          "id": "81e839715849223c8d134de37b26b6cb"
+          "id": "76cf498990d005c3b541ea72873aa951"
         },
         {
           "path": "assets/Icons/filter.svg",
-          "id": "f32e2d8d6beac7dc23b5ca4a30e363e0"
+          "id": "79dc33dd6611c7d8b3a83510daed13e9"
         },
         {
           "path": "assets/Icons/flask.svg",
-          "id": "bf019997e98d025044c2324ba88f9f67"
+          "id": "f9d971dab706419662315369764c3645"
         },
         {
           "path": "assets/Icons/heart.svg",
-          "id": "fabc344e257075ed428a39834592d1b1"
+          "id": "a5d8f496ac1aefc9437c4dc3e07a2c2d"
+        },
+        {
+          "path": "assets/Icons/heart-filled.svg",
+          "id": "f3d2313a6697aa2e4d9ddc8ab832c0cd"
+        },
+        {
+          "path": "assets/Icons/help-circle.svg",
+          "id": "7f3f22583ad44cf2bf7c18e9c0a13de4"
         },
         {
           "path": "assets/Icons/info-circle.svg",
-          "id": "3834ca38df35314cd361feba374c9579"
+          "id": "f649929f4d37c36e2e009002669794d7"
         },
         {
           "path": "assets/Icons/leaf.svg",
-          "id": "29d17f87574ae7415d469994f175c181"
+          "id": "06f20f7a6d9a9965c00b10e2b1a6ee61"
+        },
+        {
+          "path": "assets/Icons/link.svg",
+          "id": "f03c724dea0707c13a504d4e41d6bd3b"
         },
         {
           "path": "assets/Icons/lock.svg",
-          "id": "61d05d5b6391c3deb6cfdb9723490382"
+          "id": "c3c0fb062f8b694a1c586e21c58c1881"
         },
         {
           "path": "assets/Icons/mail.svg",
-          "id": "85817d53d5c33f077c38f3c6b3ab7ab4"
+          "id": "ea789a57999f97c1503321e7b46bd1e8"
         },
         {
           "path": "assets/Icons/map-pin.svg",
-          "id": "fc00e6862084c5d8e3bf94240476d5b4"
+          "id": "15e218f3081a676ddd2559181da6e165"
         },
         {
           "path": "assets/Icons/menu-2.svg",
-          "id": "11624a2ca61b26652d41af3dd832e54b"
+          "id": "394bb5af886306581ef79ce48318ce4b"
+        },
+        {
+          "path": "assets/Icons/message-circle.svg",
+          "id": "0794e5936a7fcb888444747ca75af8ed"
         },
         {
           "path": "assets/Icons/minus.svg",
-          "id": "c1af764dbca2f3842aa0023a753b7cf3"
+          "id": "34472e5b666a61184438c8292b81671b"
+        },
+        {
+          "path": "assets/Icons/news.svg",
+          "id": "0471ac197c0a868b85b3b6ba2efe6855"
         },
         {
           "path": "assets/Icons/package.svg",
-          "id": "e1d29aaf7e156485b297d61791b701fe"
+          "id": "370e994eb61868e697649e3c655805d8"
         },
         {
           "path": "assets/Icons/phone.svg",
-          "id": "946ce2a7f29676e60e300e68e832cc8d"
+          "id": "001ec7402c44cd31437b8224f4b91c5c"
         },
         {
           "path": "assets/Icons/plus.svg",
-          "id": "36a23fee68a43d91ff045e16f77b6a53"
+          "id": "5ebaeb2239692d15e8929c31bfb76cde"
         },
         {
           "path": "assets/Icons/rosette-discount.svg",
-          "id": "cdbc7281ddffa34d11f75fe58ff4fe8a"
+          "id": "8ca1a143316fecc50d959bf44360579e"
         },
         {
           "path": "assets/Icons/search.svg",
-          "id": "27168ab3eddb1a53e1924f45e8573a9f"
+          "id": "07bf164d677d3d8eff6e9907c254fd60"
         },
         {
           "path": "assets/Icons/selector.svg",
-          "id": "d3e04d61403803ecda9d01bbaaad2d35"
+          "id": "5815345bce1b6b6e7f51664e90e3b376"
         },
         {
           "path": "assets/Icons/shield-check.svg",
-          "id": "be1daea4f4045e721184ae9bfeb587d6"
+          "id": "75526c667dab83c843f493629e75a40e"
         },
         {
           "path": "assets/Icons/shopping-bag.svg",
-          "id": "78e9a17e52d32dfd3e9ef75fae955374"
+          "id": "caaa980551ba1a4714c597d8e53d835d"
         },
         {
           "path": "assets/Icons/shopping-cart.svg",
-          "id": "7bcb8f09b099bae7ea9a574d893400f2"
+          "id": "8af451530ace51bf0f3b8f779aa8fd4a"
         },
         {
           "path": "assets/Icons/star-filled.svg",
-          "id": "8974246fc10b7cd1bcac4a8fab4799cb"
+          "id": "5f4abb0d18ab30b5f7b0dc2003dd9142"
         },
         {
           "path": "assets/Icons/star.svg",
-          "id": "fba03afabd6147c5c7534201b646d44c"
+          "id": "0aba5bca52eda80c3b8e6e098963bb24"
         },
         {
           "path": "assets/Icons/tag.svg",
-          "id": "7ee94e53092cb35aa745a69468d92e9f"
+          "id": "220e41b4d6a4b093c5f736d8fa1d6bf2"
         },
         {
           "path": "assets/Icons/trash.svg",
-          "id": "508f517b42f411ac960d49dc400dcb8e"
+          "id": "7f0e923211506d0c6d8cdb25d22bf00d"
         },
         {
           "path": "assets/Icons/truck.svg",
-          "id": "cdbc9f1912d4411d3f6bfa3a6e6e000b"
+          "id": "ab8645c8bf31e5559a0b95585153e808"
         },
         {
           "path": "assets/Icons/user.svg",
-          "id": "74a3afa6278696a07b76c282a9d4c5d2"
+          "id": "c3cd550a538393863076e28d58c4d52a"
+        },
+        {
+          "path": "assets/Icons/user-check.svg",
+          "id": "df915397cda9bbf73da4c5f378ed61d1"
         },
         {
           "path": "assets/Icons/world.svg",
-          "id": "8a61c0d58feda55cef599065dbacf06f"
+          "id": "369e6a96eb19216619ab1a972a1698b0"
         },
         {
           "path": "assets/Icons/x.svg",
-          "id": "e1dec58eb097b13fb3e048b2d4baf19a"
+          "id": "bef8e0e8f4f4fcab7abf443cb69a0082"
         },
         {
           "path": "assets/Icons/zoom-in.svg",
-          "id": "3b220f351f18a42d121128cc6f8ad830"
+          "id": "0048b05fa238c005d8efee5cb1bd9bce"
+        }
+      ]
+    },
+    {
+      "name": "Imagery",
+      "tile": "l",
+      "order": [
+        "cbd-blueten.png",
+        "cbd-hash.png",
+        "cbd-joints-vorgedreht.png",
+        "cbd-kristalle-isolat.png",
+        "b-chill-logo.png",
+        "bud-bouncy-logo.png",
+        "naturalpes-logo.png"
+      ],
+      "files": [
+        {
+          "path": "assets/Imagery/cbd-blueten.png",
+          "id": "3caa3774ba4ad734afefb4984fa57280"
+        },
+        {
+          "path": "assets/Imagery/cbd-hash.png",
+          "id": "0a539c5951bc79d56bbccd29ec0fc85b"
+        },
+        {
+          "path": "assets/Imagery/cbd-joints-vorgedreht.png",
+          "id": "b0abcdd5bf04d8e49641f3dbb0210e74"
+        },
+        {
+          "path": "assets/Imagery/cbd-kristalle-isolat.png",
+          "id": "e7b9e10882d2fa7c4d9605a238f4f6ea"
+        },
+        {
+          "path": "assets/Imagery/b-chill-logo.png",
+          "id": "6ebcb078dfd56e429f7bc48e0dd0ea94"
+        },
+        {
+          "path": "assets/Imagery/bud-bouncy-logo.png",
+          "id": "44bd8b65956cc8b729944e79608b5be0"
+        },
+        {
+          "path": "assets/Imagery/naturalpes-logo.png",
+          "id": "fea79a41ab60e5a0c0cfea90b38201c0"
+        }
+      ]
+    },
+    {
+      "name": "Imagery examples",
+      "tile": "l",
+      "order": [
+        "effects-sport-s3-detail-reference.png",
+        "effects-schlaf.png",
+        "effects-schmerzen.png",
+        "effects-nebenwirkungen-exception.png",
+        "effects-gegenanzeigen-exception.png",
+        "city-collage-historical.png",
+        "blog-subject-led-collage-historical.png",
+        "blog-comparison-composition.png",
+        "category-cbd-blueten-reference.png",
+        "category-proposal-historical.png",
+        "inline-rounded-title-historical.png",
+        "inline-container-historical.png",
+        "inline-sequence-1-capsules.png",
+        "inline-sequence-5-illustrated-route.png",
+        "inline-comparison-1-angled-cards.png",
+        "inline-comparison-5-circular-panels.png",
+        "inline-annotated-1-open-callouts.png",
+        "inline-annotated-2-numbered-key.png",
+        "inline-qa-1-speech-bubbles.png",
+        "inline-qa-4-illustrated-answer.png",
+        "inline-takeaway-2-typographic.png",
+        "inline-takeaway-3-illustrated.png",
+        "inline-desktop-mobile-reflow.png",
+        "category-education-cultivation.png",
+        "category-education-flowers-buds-trim.png",
+        "category-education-oil-ingredients.png",
+        "inline-annotated-3-detail-zooms.png",
+        "inline-qa-3-editorial-columns.png",
+        "inline-takeaway-4b-navy-panel.png"
+      ],
+      "files": [
+        {
+          "path": "assets/Imagery examples/effects-sport-s3-detail-reference.png",
+          "id": "3371569fb7c21e871d58c9d18b96a591"
+        },
+        {
+          "path": "assets/Imagery examples/effects-schlaf.png",
+          "id": "1604cc18f4634c914f2ee51851f4430f"
+        },
+        {
+          "path": "assets/Imagery examples/effects-schmerzen.png",
+          "id": "7049918cb3611d8bf5bb20091406a223"
+        },
+        {
+          "path": "assets/Imagery examples/effects-nebenwirkungen-exception.png",
+          "id": "5664a7751ed63b6ffe2f46f66e62ee41"
+        },
+        {
+          "path": "assets/Imagery examples/effects-gegenanzeigen-exception.png",
+          "id": "ebf0efb14e92bea8dd7383166c94b5cc"
+        },
+        {
+          "path": "assets/Imagery examples/city-collage-historical.png",
+          "id": "4b11d16b7373404551a879dc7feb2322"
+        },
+        {
+          "path": "assets/Imagery examples/blog-subject-led-collage-historical.png",
+          "id": "89a09f5d7a8ae4753d917340f81dac21"
+        },
+        {
+          "path": "assets/Imagery examples/blog-comparison-composition.png",
+          "id": "c834fedce5681450710cecfcf82cee73"
+        },
+        {
+          "path": "assets/Imagery examples/category-cbd-blueten-reference.png",
+          "id": "c9c9e140a32e5003846de88b47d7addd"
+        },
+        {
+          "path": "assets/Imagery examples/category-proposal-historical.png",
+          "id": "0632397010abd2eadc30c02da2399f36"
+        },
+        {
+          "path": "assets/Imagery examples/inline-rounded-title-historical.png",
+          "id": "02aa4b5866766ad5428f86ca45dc3757"
+        },
+        {
+          "path": "assets/Imagery examples/inline-container-historical.png",
+          "id": "12d73d8ccaf5a8ff3abde5a409792b46"
+        },
+        {
+          "path": "assets/Imagery examples/inline-sequence-1-capsules.png",
+          "id": "7d0c69768687f333e622a740a3f215da"
+        },
+        {
+          "path": "assets/Imagery examples/inline-sequence-5-illustrated-route.png",
+          "id": "dd4d41de96f14020895308280de51d00"
+        },
+        {
+          "path": "assets/Imagery examples/inline-comparison-1-angled-cards.png",
+          "id": "5b3c5a377c09c979e05a1c9d8ec656c8"
+        },
+        {
+          "path": "assets/Imagery examples/inline-comparison-5-circular-panels.png",
+          "id": "d3e3ee4800ee30e9a942c6b9ebb9f520"
+        },
+        {
+          "path": "assets/Imagery examples/inline-annotated-1-open-callouts.png",
+          "id": "deeb18f7f5906671137e118a2328a4ba"
+        },
+        {
+          "path": "assets/Imagery examples/inline-annotated-2-numbered-key.png",
+          "id": "e92e51578012f73de4d46b76f476f952"
+        },
+        {
+          "path": "assets/Imagery examples/inline-qa-1-speech-bubbles.png",
+          "id": "d51de8db5b93a333f53b0bb7d946e39d"
+        },
+        {
+          "path": "assets/Imagery examples/inline-qa-4-illustrated-answer.png",
+          "id": "8fc95e18bd54d8cf9b4c702b4b3d4fe7"
+        },
+        {
+          "path": "assets/Imagery examples/inline-takeaway-2-typographic.png",
+          "id": "c42cb458675e77d17769407e2fea18bd"
+        },
+        {
+          "path": "assets/Imagery examples/inline-takeaway-3-illustrated.png",
+          "id": "8ad21d933072a5add23b54de69a9b4d3"
+        },
+        {
+          "path": "assets/Imagery examples/inline-desktop-mobile-reflow.png",
+          "id": "f1f2dd519d4e83c187fb5dbcc1628f8d"
+        },
+        {
+          "path": "assets/Imagery examples/category-education-cultivation.png",
+          "id": "9a7be846ac22e959f57c4e6087d6c301"
+        },
+        {
+          "path": "assets/Imagery examples/category-education-flowers-buds-trim.png",
+          "id": "ff36e7eb5999a73ca4c628be9be4f90a"
+        },
+        {
+          "path": "assets/Imagery examples/category-education-oil-ingredients.png",
+          "id": "0303545f20a0d73067710ad26b2028c2"
+        },
+        {
+          "path": "assets/Imagery examples/inline-annotated-3-detail-zooms.png",
+          "id": "369c328040b648f7a232df4e3068a6f8"
+        },
+        {
+          "path": "assets/Imagery examples/inline-qa-3-editorial-columns.png",
+          "id": "a03b7f06e50cbb25e26c38de156fe227"
+        },
+        {
+          "path": "assets/Imagery examples/inline-takeaway-4b-navy-panel.png",
+          "id": "7107c9abcb542d7873df2b66e813970d"
         }
       ]
     }
@@ -779,481 +1114,915 @@
     "files": {
       "assets/Icons/adjustments-horizontal.svg": {
         "store": "blob",
-        "id": "5dfbe0c60e65e773013d4ed3c35e33a2",
+        "id": "b4e1dde4c7ee47fa910af34c97296c70",
         "sha256": "5d972a9b515a6aef1b947a6a2dd063a45202e885051e7b1a93b2a521e67f3840",
         "bytes": 509,
         "type": "image/svg+xml"
       },
       "assets/Icons/alert-circle.svg": {
         "store": "blob",
-        "id": "7cf0a80c9c7bbb157c370169f3812654",
+        "id": "9c9896b49c1e22007a64785f848b9019",
         "sha256": "7dd3aed5f4e0bcfe97c6d785298e5af2920fe87c3a11a381ac019b21066bb57a",
         "bytes": 294,
         "type": "image/svg+xml"
       },
       "assets/Icons/alert-triangle.svg": {
         "store": "blob",
-        "id": "e29a4b0f381ee7d5121c04efa2f6f966",
+        "id": "ebd78df36e2baa39f9b007d11c3daf36",
         "sha256": "521c57b0169e339e24bb4b498a18acea40ec633f3aacf3a678bbdc71add4d2e6",
         "bytes": 394,
         "type": "image/svg+xml"
       },
       "assets/Icons/arrow-back-up.svg": {
         "store": "blob",
-        "id": "f3bf69d944fff8762885ecc4ed8579e1",
+        "id": "0f9ef6c63bbd8cd86b75a4d253c73806",
         "sha256": "99064b236e757a6ee820aa16b25c306a1f2fd3632053ee1481d0538a37107a45",
         "bytes": 264,
         "type": "image/svg+xml"
       },
       "assets/Icons/arrows-sort.svg": {
         "store": "blob",
-        "id": "a6ab27398bddae514a080197a4e187a9",
+        "id": "250755e908e229dff351a9c88798ccd7",
         "sha256": "aca7df39f8571dc14801bc3ddd90b84b9aab54c76e635a34ea205a26fd1843a5",
         "bytes": 270,
         "type": "image/svg+xml"
       },
+      "assets/Icons/brand-facebook.svg": {
+        "store": "blob",
+        "id": "d8305b1f4f0833ff4e4e4eb972b0d907",
+        "sha256": "747213ec5c7c28eae6af999a332c29985a5e52ca29f0d635e2949890f7de28c0",
+        "bytes": 277,
+        "type": "image/svg+xml"
+      },
+      "assets/Icons/brand-instagram.svg": {
+        "store": "blob",
+        "id": "6aca23740953a9fe01eb0d0e8759bbed",
+        "sha256": "2fb7d0f9a9c9b69cfcf6bea05d748ff37aeaa18fc57fb7a9a36abda272b47588",
+        "bytes": 360,
+        "type": "image/svg+xml"
+      },
+      "assets/Icons/brand-linkedin.svg": {
+        "store": "blob",
+        "id": "c132b78e57eefdefee1fd0c3ad7e76ff",
+        "sha256": "4ab4e0595c7ef1d1cdd96ac8bbdf00a79d7cf58a61386bcf3dd49bd2ea003051",
+        "bytes": 400,
+        "type": "image/svg+xml"
+      },
+      "assets/Icons/brand-telegram.svg": {
+        "store": "blob",
+        "id": "779f24c15bf41e81b951e98aad077eb5",
+        "sha256": "b28fba13ee0cda90599b66522145fdc21404a5cc27b6744194d44908c2f0bcb2",
+        "bytes": 245,
+        "type": "image/svg+xml"
+      },
       "assets/Icons/cannabis.svg": {
         "store": "blob",
-        "id": "02f712d520b29e2fc69a3e476e4bba9a",
+        "id": "6f0875f807d9dd5a921bc45c905d927e",
         "sha256": "655d4ef7afa796bc36558d314f8c4713c4b0d208a5b110fce8cf86d4fc5e3a24",
         "bytes": 564,
         "type": "image/svg+xml"
       },
       "assets/Icons/check.svg": {
         "store": "blob",
-        "id": "8299ead0e5b5d3edf116a297423244a8",
+        "id": "e861ef53e52d80aece5b4b37b098683a",
         "sha256": "74f7f3276d497da4a49c60c67c7ba07672160d1b292e9ae6e66e8e41e6b5b7d6",
         "bytes": 221,
         "type": "image/svg+xml"
       },
       "assets/Icons/chevron-down.svg": {
         "store": "blob",
-        "id": "f6a3ddd27a205bef8c71bffbb06aaa2c",
+        "id": "4ea00c4ba536d2baedeceb5255cb0cf2",
         "sha256": "8d67914b5f84bd33f66729dd5e2cbedad1346dce7f30f51ff6e3ba77c089a5b9",
         "bytes": 218,
         "type": "image/svg+xml"
       },
       "assets/Icons/chevron-left.svg": {
         "store": "blob",
-        "id": "c14805ef648b65d984f0d2bc0b2cfc0a",
+        "id": "f16ed7a026e071367766182fcff322e3",
         "sha256": "86522c32694a82ea41f9f88e4e29117adfc78866a81a75c622a74837bf428358",
         "bytes": 219,
         "type": "image/svg+xml"
       },
       "assets/Icons/chevron-right.svg": {
         "store": "blob",
-        "id": "1462fc6bc8371ae5f1bf6de5b25fe197",
+        "id": "b429e56cc63eaf7ad8d88fecdc621ea1",
         "sha256": "0455cfb2fcd4c33d9db2fbe2c6f06aba6eaa492ee487ba69fc7b3f650c042b94",
         "bytes": 218,
         "type": "image/svg+xml"
       },
       "assets/Icons/chevron-up.svg": {
         "store": "blob",
-        "id": "46e6fe06cc182d449883caad5ab69ba7",
+        "id": "7af30d9fde62b05a887800bfcb7a67b5",
         "sha256": "1b565f4135468d6b6e055eb5bc2f4a327d2a0c52750bed1762baebe07cc8a155",
         "bytes": 219,
         "type": "image/svg+xml"
       },
       "assets/Icons/circle-check.svg": {
         "store": "blob",
-        "id": "513e59acb283bbeda8afc43a6a0f8cf3",
+        "id": "98ac51a5a72a352d021ed6c0f693b1d8",
         "sha256": "2ef4f7ca1da2428b901aefdd875588cec69a9301a7690d71e0775f1fcc56e952",
         "bytes": 273,
         "type": "image/svg+xml"
       },
       "assets/Icons/circle-x.svg": {
         "store": "blob",
-        "id": "8e4d4d602cbd762a4602374b7daefe77",
+        "id": "c58b32af9ba65ae964e0a8bab33a1226",
         "sha256": "fe518aedde7a4e5a5ad9bb51c10d882283fdffa3b6ad3e476497fb537717001b",
         "bytes": 279,
         "type": "image/svg+xml"
       },
       "assets/Icons/clock.svg": {
         "store": "blob",
-        "id": "26cb0396874003ec1f28db14ae348351",
+        "id": "063d6d752aec7b966e7bfe78fa9528bd",
         "sha256": "aa17409b9d52bf78cdca816a599b511c8261ddbfdb3c9f0a4ff1c7c11a1678c1",
         "bytes": 270,
         "type": "image/svg+xml"
       },
       "assets/Icons/credit-card.svg": {
         "store": "blob",
-        "id": "28c3b1415f146b125240e66c85d70acd",
+        "id": "a72b0f3f97184ee740c9db39dd2f4fa1",
         "sha256": "a2d95d43271f2a89a988318b6e40c51b2ab99dc0c6af8fd498b34a22e5ce0c5b",
         "bytes": 368,
         "type": "image/svg+xml"
       },
       "assets/Icons/external-link.svg": {
         "store": "blob",
-        "id": "81e839715849223c8d134de37b26b6cb",
+        "id": "76cf498990d005c3b541ea72873aa951",
         "sha256": "af5ee5705d1f3a492050bda0e0a2a3f54a06b9010d736c1c794f47c746a9f559",
         "bytes": 322,
         "type": "image/svg+xml"
       },
       "assets/Icons/filter.svg": {
         "store": "blob",
-        "id": "f32e2d8d6beac7dc23b5ca4a30e363e0",
+        "id": "79dc33dd6611c7d8b3a83510daed13e9",
         "sha256": "277992fbe9e471fe561efed67259f0225ead76caec58e51ea53b06ba521c96f8",
         "bytes": 307,
         "type": "image/svg+xml"
       },
       "assets/Icons/flask.svg": {
         "store": "blob",
-        "id": "bf019997e98d025044c2324ba88f9f67",
+        "id": "f9d971dab706419662315369764c3645",
         "sha256": "643f0533cac2eb98f41571e1993b33991a83d30f94baecbfb9050ea52d003920",
         "bytes": 319,
         "type": "image/svg+xml"
       },
+      "assets/Icons/heart-filled.svg": {
+        "store": "blob",
+        "id": "f3d2313a6697aa2e4d9ddc8ab832c0cd",
+        "sha256": "00ad4420bde6afa6ba735d50c58c63c5f52244ba94a272e54beb471c1238c778",
+        "bytes": 342,
+        "type": "image/svg+xml"
+      },
       "assets/Icons/heart.svg": {
         "store": "blob",
-        "id": "fabc344e257075ed428a39834592d1b1",
+        "id": "a5d8f496ac1aefc9437c4dc3e07a2c2d",
         "sha256": "863d5d7068815e8a5fbf91e690de4ee42137af9dd57b1bfbee4989122234679e",
         "bytes": 281,
         "type": "image/svg+xml"
       },
+      "assets/Icons/help-circle.svg": {
+        "store": "blob",
+        "id": "7f3f22583ad44cf2bf7c18e9c0a13de4",
+        "sha256": "9ed2456c4b3b7dc333d3d2a008b75ba37ac9b9c58a3c9823524e81dc6e74cdee",
+        "bytes": 343,
+        "type": "image/svg+xml"
+      },
       "assets/Icons/info-circle.svg": {
         "store": "blob",
-        "id": "3834ca38df35314cd361feba374c9579",
+        "id": "f649929f4d37c36e2e009002669794d7",
         "sha256": "3a69000dcab13fbcaf15f3f9af095e4a45ec6f2916bbf52abc1cd6acfd592096",
         "bytes": 298,
         "type": "image/svg+xml"
       },
       "assets/Icons/leaf.svg": {
         "store": "blob",
-        "id": "29d17f87574ae7415d469994f175c181",
+        "id": "06f20f7a6d9a9965c00b10e2b1a6ee61",
         "sha256": "8d720cf7e9e8221a9233ef623df5c777be1e29771a4715b266ad5ff42848d1a5",
         "bytes": 333,
         "type": "image/svg+xml"
       },
+      "assets/Icons/link.svg": {
+        "store": "blob",
+        "id": "f03c724dea0707c13a504d4e41d6bd3b",
+        "sha256": "b4c898d7e94afa5a6bb7a427f5c337d9679ea83abbc7dc46965b4f7c23e98ee7",
+        "bytes": 382,
+        "type": "image/svg+xml"
+      },
       "assets/Icons/lock.svg": {
         "store": "blob",
-        "id": "61d05d5b6391c3deb6cfdb9723490382",
+        "id": "c3c0fb062f8b694a1c586e21c58c1881",
         "sha256": "c887b3a4e1fce574a609a0e5dab3aa0f98b95b5b2a3cb7cb4d38f6da6bce7376",
         "bytes": 377,
         "type": "image/svg+xml"
       },
       "assets/Icons/mail.svg": {
         "store": "blob",
-        "id": "85817d53d5c33f077c38f3c6b3ab7ab4",
+        "id": "ea789a57999f97c1503321e7b46bd1e8",
         "sha256": "fae555e16a201a3d716e2d9eb59a7f3dc89cd75bd86ea122a4318b67472840ce",
         "bytes": 314,
         "type": "image/svg+xml"
       },
       "assets/Icons/map-pin.svg": {
         "store": "blob",
-        "id": "fc00e6862084c5d8e3bf94240476d5b4",
+        "id": "15e218f3081a676ddd2559181da6e165",
         "sha256": "085cb3daf8b9a23c6c293fca4fac08b1acea7f3b21dd902a0c68b5684c6f87e1",
         "bytes": 336,
         "type": "image/svg+xml"
       },
       "assets/Icons/menu-2.svg": {
         "store": "blob",
-        "id": "11624a2ca61b26652d41af3dd832e54b",
+        "id": "394bb5af886306581ef79ce48318ce4b",
         "sha256": "d5964cd717caf6196db45c0b39b517cba2e0bdb8f6ca026bb99fd127a4bb1e0b",
         "bytes": 270,
         "type": "image/svg+xml"
       },
+      "assets/Icons/message-circle.svg": {
+        "store": "blob",
+        "id": "0794e5936a7fcb888444747ca75af8ed",
+        "sha256": "221a8671bb905f215936b2ca41d1f4e54949f02aa46508e2a249282717135f05",
+        "bytes": 379,
+        "type": "image/svg+xml"
+      },
       "assets/Icons/minus.svg": {
         "store": "blob",
-        "id": "c1af764dbca2f3842aa0023a753b7cf3",
+        "id": "34472e5b666a61184438c8292b81671b",
         "sha256": "99b64ad6b2ca50351420be7b4e761afe4470def947484afa2ec182b091186b17",
         "bytes": 215,
         "type": "image/svg+xml"
       },
+      "assets/Icons/news.svg": {
+        "store": "blob",
+        "id": "0471ac197c0a868b85b3b6ba2efe6855",
+        "sha256": "372070f119fd8c966a4df9368ae2f073e8bd73450167ab2b99ac701a78a81b03",
+        "bytes": 383,
+        "type": "image/svg+xml"
+      },
       "assets/Icons/package.svg": {
         "store": "blob",
-        "id": "e1d29aaf7e156485b297d61791b701fe",
+        "id": "370e994eb61868e697649e3c655805d8",
         "sha256": "7c3f0fe1b00e1bbe79ccf4503d79237676dd3aa64a9ee2be10a7ba5359a8d88b",
         "bytes": 371,
         "type": "image/svg+xml"
       },
       "assets/Icons/phone.svg": {
         "store": "blob",
-        "id": "946ce2a7f29676e60e300e68e832cc8d",
+        "id": "001ec7402c44cd31437b8224f4b91c5c",
         "sha256": "b1e576dbf50e548b825a3c7550afbb3110c375d555469682cdcaf68ec9481159",
         "bytes": 305,
         "type": "image/svg+xml"
       },
       "assets/Icons/plus.svg": {
         "store": "blob",
-        "id": "36a23fee68a43d91ff045e16f77b6a53",
+        "id": "5ebaeb2239692d15e8929c31bfb76cde",
         "sha256": "390f845bb245f8c03c3b68bffef54b15c4911f531a03dce16576924fa20df094",
         "bytes": 243,
         "type": "image/svg+xml"
       },
       "assets/Icons/rosette-discount.svg": {
         "store": "blob",
-        "id": "cdbc7281ddffa34d11f75fe58ff4fe8a",
+        "id": "8ca1a143316fecc50d959bf44360579e",
         "sha256": "c0ff0358c8abd92a4aadc1744369e691e867f1c5fa3fae8a4e699bd620b49a59",
         "bytes": 841,
         "type": "image/svg+xml"
       },
       "assets/Icons/search.svg": {
         "store": "blob",
-        "id": "27168ab3eddb1a53e1924f45e8573a9f",
+        "id": "07bf164d677d3d8eff6e9907c254fd60",
         "sha256": "9e7c6388fe3ef103b4aef912bf4f024b6746d07a89bbcfe819f156466135e6e5",
         "bytes": 271,
         "type": "image/svg+xml"
       },
       "assets/Icons/selector.svg": {
         "store": "blob",
-        "id": "d3e04d61403803ecda9d01bbaaad2d35",
+        "id": "5815345bce1b6b6e7f51664e90e3b376",
         "sha256": "e10b9c5aafbc138fc8300b9cccdd478f9ed904f5ff7ef0598388bda3bb1d7653",
         "bytes": 253,
         "type": "image/svg+xml"
       },
       "assets/Icons/shield-check.svg": {
         "store": "blob",
-        "id": "be1daea4f4045e721184ae9bfeb587d6",
+        "id": "75526c667dab83c843f493629e75a40e",
         "sha256": "141aa57c43fd9432b6770dc21832fbeb9338e64d5e42be30fab0af879e529b8b",
         "bytes": 336,
         "type": "image/svg+xml"
       },
       "assets/Icons/shopping-bag.svg": {
         "store": "blob",
-        "id": "78e9a17e52d32dfd3e9ef75fae955374",
+        "id": "caaa980551ba1a4714c597d8e53d835d",
         "sha256": "67987fb661062bc3c7407b203764a3b131dcbc49dc82ee9aa06a127453b706db",
         "bytes": 388,
         "type": "image/svg+xml"
       },
       "assets/Icons/shopping-cart.svg": {
         "store": "blob",
-        "id": "7bcb8f09b099bae7ea9a574d893400f2",
+        "id": "8af451530ace51bf0f3b8f779aa8fd4a",
         "sha256": "5efe6830da8d54c866b5b82109744d17a1db920782b946fbd118ecbc78d51e0b",
         "bytes": 363,
         "type": "image/svg+xml"
       },
       "assets/Icons/star-filled.svg": {
         "store": "blob",
-        "id": "8974246fc10b7cd1bcac4a8fab4799cb",
+        "id": "5f4abb0d18ab30b5f7b0dc2003dd9142",
         "sha256": "c1a77ac9de2928b1618f130824b674cb716db6db5dc7c82aabb2a56f28cda0a5",
         "bytes": 397,
         "type": "image/svg+xml"
       },
       "assets/Icons/star.svg": {
         "store": "blob",
-        "id": "fba03afabd6147c5c7534201b646d44c",
+        "id": "0aba5bca52eda80c3b8e6e098963bb24",
         "sha256": "6c74a1e3cca73f97bca47b02b4f2613d082da57bbfd2c48c700178d07d7bc334",
         "bytes": 323,
         "type": "image/svg+xml"
       },
       "assets/Icons/tag.svg": {
         "store": "blob",
-        "id": "7ee94e53092cb35aa745a69468d92e9f",
+        "id": "220e41b4d6a4b093c5f736d8fa1d6bf2",
         "sha256": "671bb75485d204ed049404343da4061512ff2bb2321ccea81d73af9df0e11492",
         "bytes": 420,
         "type": "image/svg+xml"
       },
       "assets/Icons/trash.svg": {
         "store": "blob",
-        "id": "508f517b42f411ac960d49dc400dcb8e",
+        "id": "7f0e923211506d0c6d8cdb25d22bf00d",
         "sha256": "314e8adb22f2a6829f5b9a1862557b98804bb7a33703df7bca89a6525fdeaaaf",
         "bytes": 392,
         "type": "image/svg+xml"
       },
       "assets/Icons/truck.svg": {
         "store": "blob",
-        "id": "cdbc9f1912d4411d3f6bfa3a6e6e000b",
+        "id": "ab8645c8bf31e5559a0b95585153e808",
         "sha256": "3b7b7f7426c893d66b61883fdcc6c41abcfe5927bdc9baf0019513bf28c52033",
         "bytes": 372,
         "type": "image/svg+xml"
       },
+      "assets/Icons/user-check.svg": {
+        "store": "blob",
+        "id": "df915397cda9bbf73da4c5f378ed61d1",
+        "sha256": "dc6d105e5cc35bd870b24d6c5936418191ad51cb288fae02c98c5ffaedd5f726",
+        "bytes": 314,
+        "type": "image/svg+xml"
+      },
       "assets/Icons/user.svg": {
         "store": "blob",
-        "id": "74a3afa6278696a07b76c282a9d4c5d2",
+        "id": "c3cd550a538393863076e28d58c4d52a",
         "sha256": "7c005c05ccc6e2b70d51bf701189c5fccee84c7a4655b02c301da8c427dfb40c",
         "bytes": 297,
         "type": "image/svg+xml"
       },
       "assets/Icons/world.svg": {
         "store": "blob",
-        "id": "8a61c0d58feda55cef599065dbacf06f",
+        "id": "369e6a96eb19216619ab1a972a1698b0",
         "sha256": "d7ca8c53af2a99244522d1ca80660954b1a18a809f8c05a0d4a2120b5111219a",
         "bytes": 384,
         "type": "image/svg+xml"
       },
       "assets/Icons/x.svg": {
         "store": "blob",
-        "id": "e1dec58eb097b13fb3e048b2d4baf19a",
+        "id": "bef8e0e8f4f4fcab7abf443cb69a0082",
         "sha256": "76e196c23a8eb54641beb7bc013fcf832e9647b782a795399f299fcacff751e8",
         "bytes": 245,
         "type": "image/svg+xml"
       },
       "assets/Icons/zoom-in.svg": {
         "store": "blob",
-        "id": "3b220f351f18a42d121128cc6f8ad830",
+        "id": "0048b05fa238c005d8efee5cb1bd9bce",
         "sha256": "a609d67c87cba1bf69f43d23526fe09975009e18aeb35c73483ea5e4fd69ffb8",
         "bytes": 325,
         "type": "image/svg+xml"
       },
+      "assets/Imagery examples/blog-comparison-composition.png": {
+        "store": "blob",
+        "id": "c834fedce5681450710cecfcf82cee73",
+        "sha256": "da830470cd6f8113faf0fda9ad475df1e6f1fe0fdcec99f1a185cc96f033a7c8",
+        "bytes": 913051,
+        "type": "image/png"
+      },
+      "assets/Imagery examples/blog-subject-led-collage-historical.png": {
+        "store": "blob",
+        "id": "89a09f5d7a8ae4753d917340f81dac21",
+        "sha256": "87e3d46ba2b986dcb5e3c839fd4021dd197f9903acf837cc56428553c87f7050",
+        "bytes": 3604236,
+        "type": "image/png"
+      },
+      "assets/Imagery examples/category-cbd-blueten-reference.png": {
+        "store": "blob",
+        "id": "c9c9e140a32e5003846de88b47d7addd",
+        "sha256": "98dc9b8019ed96f5c530f3dbca3fca8033b980e37821a44047a8dad518f36ef6",
+        "bytes": 2489855,
+        "type": "image/png"
+      },
+      "assets/Imagery examples/category-education-cultivation.png": {
+        "store": "blob",
+        "id": "9a7be846ac22e959f57c4e6087d6c301",
+        "sha256": "344497b2ee96d5d18d369354351c28fcdbeddcef9b4511450dc336e226be2593",
+        "bytes": 152516,
+        "type": "image/png"
+      },
+      "assets/Imagery examples/category-education-flowers-buds-trim.png": {
+        "store": "blob",
+        "id": "ff36e7eb5999a73ca4c628be9be4f90a",
+        "sha256": "e15bb5a19a56a8f030b7dfbf104168fbb0844b7302637597d57f8d3366b6c45a",
+        "bytes": 149905,
+        "type": "image/png"
+      },
+      "assets/Imagery examples/category-education-oil-ingredients.png": {
+        "store": "blob",
+        "id": "0303545f20a0d73067710ad26b2028c2",
+        "sha256": "ee5cf4f81e059a2a7895aa5b284175b4e6bb643520e6d7b21aa19a5c50f8cc6f",
+        "bytes": 131240,
+        "type": "image/png"
+      },
+      "assets/Imagery examples/category-proposal-historical.png": {
+        "store": "blob",
+        "id": "0632397010abd2eadc30c02da2399f36",
+        "sha256": "b05c4586c1a7babbb6a37a0762cadbf573ebba7f650a9d156607ec78403e1e1f",
+        "bytes": 3938488,
+        "type": "image/png"
+      },
+      "assets/Imagery examples/city-collage-historical.png": {
+        "store": "blob",
+        "id": "4b11d16b7373404551a879dc7feb2322",
+        "sha256": "60d6e91ede7110f7b37c8d7524e8d8cfa1a3ae21c66ba9e377c790822f452445",
+        "bytes": 3921080,
+        "type": "image/png"
+      },
+      "assets/Imagery examples/effects-gegenanzeigen-exception.png": {
+        "store": "blob",
+        "id": "ebf0efb14e92bea8dd7383166c94b5cc",
+        "sha256": "cd05414dfe440387fb91a01b5ec44fb8eb6dd1f980c448909456b657b6dda7b0",
+        "bytes": 2715396,
+        "type": "image/png"
+      },
+      "assets/Imagery examples/effects-nebenwirkungen-exception.png": {
+        "store": "blob",
+        "id": "5664a7751ed63b6ffe2f46f66e62ee41",
+        "sha256": "755a93a836c8eb8e4976726449c929457327cc1b078ef86bd50910cd03a1298e",
+        "bytes": 2685090,
+        "type": "image/png"
+      },
+      "assets/Imagery examples/effects-schlaf.png": {
+        "store": "blob",
+        "id": "1604cc18f4634c914f2ee51851f4430f",
+        "sha256": "07da1bfe9cb2c78fd875a0a886131e34113bd8606569ed9b14d05fd325ef04c3",
+        "bytes": 2625350,
+        "type": "image/png"
+      },
+      "assets/Imagery examples/effects-schmerzen.png": {
+        "store": "blob",
+        "id": "7049918cb3611d8bf5bb20091406a223",
+        "sha256": "60661038d7b772db054f28e59cecdec1f06fe59568f92c3519e8b8bbe26fce31",
+        "bytes": 2753723,
+        "type": "image/png"
+      },
+      "assets/Imagery examples/effects-sport-s3-detail-reference.png": {
+        "store": "blob",
+        "id": "3371569fb7c21e871d58c9d18b96a591",
+        "sha256": "46e4b2123d6df43da1e1d4795d9fc727761d63702fcf63d2b8cee957ebd3b4a9",
+        "bytes": 775470,
+        "type": "image/png"
+      },
+      "assets/Imagery examples/inline-annotated-1-open-callouts.png": {
+        "store": "blob",
+        "id": "deeb18f7f5906671137e118a2328a4ba",
+        "sha256": "96a7cc7e408d0a6e7eae75e47d3fe7ff8ffd6d616c4a0af1443809ed61bd1e37",
+        "bytes": 147781,
+        "type": "image/png"
+      },
+      "assets/Imagery examples/inline-annotated-2-numbered-key.png": {
+        "store": "blob",
+        "id": "e92e51578012f73de4d46b76f476f952",
+        "sha256": "ffaae2232642db3624084843e7e80fbbfeb7dc317c6bcf1d0d8162b410f70b9f",
+        "bytes": 169005,
+        "type": "image/png"
+      },
+      "assets/Imagery examples/inline-annotated-3-detail-zooms.png": {
+        "store": "blob",
+        "id": "369c328040b648f7a232df4e3068a6f8",
+        "sha256": "e8d60c72c5f91aa9827443e92a451f11e283da5a6e6238c6b87f3f881842ec93",
+        "bytes": 206478,
+        "type": "image/png"
+      },
+      "assets/Imagery examples/inline-comparison-1-angled-cards.png": {
+        "store": "blob",
+        "id": "5b3c5a377c09c979e05a1c9d8ec656c8",
+        "sha256": "c85fcadf99b2c7428c3f8f15f8a241a2c75629eaba4c2fff160051ac3a3c7f69",
+        "bytes": 163334,
+        "type": "image/png"
+      },
+      "assets/Imagery examples/inline-comparison-5-circular-panels.png": {
+        "store": "blob",
+        "id": "d3e3ee4800ee30e9a942c6b9ebb9f520",
+        "sha256": "38465c05c334dce3ed449c5c877673d38f138ab23e0171c2fa974fba4f8455ee",
+        "bytes": 170200,
+        "type": "image/png"
+      },
+      "assets/Imagery examples/inline-container-historical.png": {
+        "store": "blob",
+        "id": "12d73d8ccaf5a8ff3abde5a409792b46",
+        "sha256": "e62111801ede90b7f9bd0edc2504e31262122f150cf394f5fbf98804461b26e8",
+        "bytes": 83331,
+        "type": "image/png"
+      },
+      "assets/Imagery examples/inline-desktop-mobile-reflow.png": {
+        "store": "blob",
+        "id": "f1f2dd519d4e83c187fb5dbcc1628f8d",
+        "sha256": "d1b0a9db443946e0f9fd86c92bd50da8d64591c53c972778459322fd0bb7683d",
+        "bytes": 253995,
+        "type": "image/png"
+      },
+      "assets/Imagery examples/inline-qa-1-speech-bubbles.png": {
+        "store": "blob",
+        "id": "d51de8db5b93a333f53b0bb7d946e39d",
+        "sha256": "d7d468fc584de2c7207d14aa7671be7edca091a4d9f7ebb4d47f263d67d9cda2",
+        "bytes": 40616,
+        "type": "image/png"
+      },
+      "assets/Imagery examples/inline-qa-3-editorial-columns.png": {
+        "store": "blob",
+        "id": "a03b7f06e50cbb25e26c38de156fe227",
+        "sha256": "7f5c669941423d5c65e530a7bbfb4041799e6324cd0407fc26c842b4969d7462",
+        "bytes": 36270,
+        "type": "image/png"
+      },
+      "assets/Imagery examples/inline-qa-4-illustrated-answer.png": {
+        "store": "blob",
+        "id": "8fc95e18bd54d8cf9b4c702b4b3d4fe7",
+        "sha256": "ad7780891486e74c725065abbef4f49ef7bddb7df0fb48031ee3ba19b0efdfbf",
+        "bytes": 155405,
+        "type": "image/png"
+      },
+      "assets/Imagery examples/inline-rounded-title-historical.png": {
+        "store": "blob",
+        "id": "02aa4b5866766ad5428f86ca45dc3757",
+        "sha256": "2f01894311b1f4c70f8c278215eeefaf4f93ff55293f42ca9ae491aba51cad3e",
+        "bytes": 71934,
+        "type": "image/png"
+      },
+      "assets/Imagery examples/inline-sequence-1-capsules.png": {
+        "store": "blob",
+        "id": "7d0c69768687f333e622a740a3f215da",
+        "sha256": "f57cbcef2d51316c7eeb41dc1ceec5ff6d882cbae9135d15b1d0322edc6c1662",
+        "bytes": 48524,
+        "type": "image/png"
+      },
+      "assets/Imagery examples/inline-sequence-5-illustrated-route.png": {
+        "store": "blob",
+        "id": "dd4d41de96f14020895308280de51d00",
+        "sha256": "cfca8b6a2f67f0259dfed058771f534f05544c2ec6eef88a9e468f0ab30a00d6",
+        "bytes": 187574,
+        "type": "image/png"
+      },
+      "assets/Imagery examples/inline-takeaway-2-typographic.png": {
+        "store": "blob",
+        "id": "c42cb458675e77d17769407e2fea18bd",
+        "sha256": "8438cfb04abefcf952bbaa2b6a54152810e1d5404c99d0b20f77d98d08d746ac",
+        "bytes": 33229,
+        "type": "image/png"
+      },
+      "assets/Imagery examples/inline-takeaway-3-illustrated.png": {
+        "store": "blob",
+        "id": "8ad21d933072a5add23b54de69a9b4d3",
+        "sha256": "d38802d963bdcbb093390bdca8ca267f23d590d2484f1777f5f31847ff91b913",
+        "bytes": 141063,
+        "type": "image/png"
+      },
+      "assets/Imagery examples/inline-takeaway-4b-navy-panel.png": {
+        "store": "blob",
+        "id": "7107c9abcb542d7873df2b66e813970d",
+        "sha256": "d54763926915452f045a2d1bd9c25e08e4b9231a3225cc1b3ec7be9ec67f7a25",
+        "bytes": 37917,
+        "type": "image/png"
+      },
+      "assets/Imagery/b-chill-logo.png": {
+        "store": "blob",
+        "id": "6ebcb078dfd56e429f7bc48e0dd0ea94",
+        "sha256": "8fd971608bf9444a6df257e70a88147b1c16a9a3574b34b4a7dcad821bb5d227",
+        "bytes": 43218,
+        "type": "image/png"
+      },
+      "assets/Imagery/bud-bouncy-logo.png": {
+        "store": "blob",
+        "id": "44bd8b65956cc8b729944e79608b5be0",
+        "sha256": "02e7082c41b5c855c569bfba37d3ad6d7978ead33c770ec43940aa02861e3373",
+        "bytes": 154285,
+        "type": "image/png"
+      },
+      "assets/Imagery/cbd-blueten.png": {
+        "store": "blob",
+        "id": "3caa3774ba4ad734afefb4984fa57280",
+        "sha256": "b08f9e442627d7bc6293f218a08f1f003f3586ec17ef527e8936def0671ed56c",
+        "bytes": 1341924,
+        "type": "image/png"
+      },
+      "assets/Imagery/cbd-hash.png": {
+        "store": "blob",
+        "id": "0a539c5951bc79d56bbccd29ec0fc85b",
+        "sha256": "48dedda37a4191bee6b136bd6ad16a51591040e928aeed67f9920c745f20541c",
+        "bytes": 1464858,
+        "type": "image/png"
+      },
+      "assets/Imagery/cbd-joints-vorgedreht.png": {
+        "store": "blob",
+        "id": "b0abcdd5bf04d8e49641f3dbb0210e74",
+        "sha256": "fb4c816e589beb8712dbb7d320e382600e3ee81fb678c7b3a44c4cbb4fcedf90",
+        "bytes": 1331881,
+        "type": "image/png"
+      },
+      "assets/Imagery/cbd-kristalle-isolat.png": {
+        "store": "blob",
+        "id": "e7b9e10882d2fa7c4d9605a238f4f6ea",
+        "sha256": "cc39a2cfe6c540500358f4269c5a3b31b77469a6769fcab2f3537d4abd11e12b",
+        "bytes": 1491243,
+        "type": "image/png"
+      },
+      "assets/Imagery/naturalpes-logo.png": {
+        "store": "blob",
+        "id": "fea79a41ab60e5a0c0cfea90b38201c0",
+        "sha256": "a2ba5cc853a4c307494ef0ac61f4b24ec7f7fcb2e81beb80d0261ccad7db3571",
+        "bytes": 58134,
+        "type": "image/png"
+      },
+      "assets/Logos/uweed_badge_black.svg": {
+        "store": "blob",
+        "id": "e91751c83cc88c30e68fb468aae82c0b",
+        "sha256": "ebeee8de0bdfd96c68a665081e13da42d34102b1e16a71cefe84534502e36280",
+        "bytes": 18651,
+        "type": "image/svg+xml"
+      },
+      "assets/Logos/uweed_badge_dark-blue.svg": {
+        "store": "blob",
+        "id": "4b07abd5bc10da003c08449809cd7e07",
+        "sha256": "262c9274b3e811539cd657b6db3354072318b80da99272d817ab3a381d98cd61",
+        "bytes": 18651,
+        "type": "image/svg+xml"
+      },
+      "assets/Logos/uweed_badge_dark-green.svg": {
+        "store": "blob",
+        "id": "ba9908a02498976888338b84ac6c9b10",
+        "sha256": "4b7aad086487e42b5a53e8f60f7bf2d5eef8b5bdea7672010e0c37d5e7f682b0",
+        "bytes": 18651,
+        "type": "image/svg+xml"
+      },
+      "assets/Logos/uweed_badge_dark-pink.svg": {
+        "store": "blob",
+        "id": "941130ac29bfda8901a9520cec18f457",
+        "sha256": "d92aecbae71c3bc7794712aa521c4041eb5b675f548e799d750a4f7309e2bf46",
+        "bytes": 18651,
+        "type": "image/svg+xml"
+      },
+      "assets/Logos/uweed_badge_light-blue.svg": {
+        "store": "blob",
+        "id": "f776506d9b5cbcd8ff58d1a0d7f36be1",
+        "sha256": "08c495d6f5e137728491ca57bb5cbfdd5e9cad8f0554b93829fc411fca067f07",
+        "bytes": 18651,
+        "type": "image/svg+xml"
+      },
+      "assets/Logos/uweed_badge_light-green.svg": {
+        "store": "blob",
+        "id": "c97e8affaa123fcdbb57ca84957b35d2",
+        "sha256": "821fa5a0372da5c4e09818cc8b9ac621d966c1c6186ab3460ef35512fb31284e",
+        "bytes": 18651,
+        "type": "image/svg+xml"
+      },
+      "assets/Logos/uweed_badge_light-pink.svg": {
+        "store": "blob",
+        "id": "cc157d9fccc78fe5b23b1c3f9cc24f52",
+        "sha256": "8fb93b8fe83c608743aba2e688b614c5a692adbebca6a2818cfb255e0a0ed14a",
+        "bytes": 18651,
+        "type": "image/svg+xml"
+      },
+      "assets/Logos/uweed_badge_white.svg": {
+        "store": "blob",
+        "id": "be336b78643ffb89f9a32ad0ddc7f739",
+        "sha256": "04cf735282e8cc66e05a83210ddca95e6534f1c2ca32c00c3a7e2d42ab719852",
+        "bytes": 18651,
+        "type": "image/svg+xml"
+      },
       "assets/Logos/uweed_favicon_180.png": {
         "store": "blob",
-        "id": "1c34ee6ef7d98d1ed417e4259ce6ee5c",
+        "id": "07ea474922e26276fd182c977abcd219",
         "sha256": "d44428d74022255e5ddf919768d70cdcef35dfc8123e79938d0ffaf5355e34e0",
         "bytes": 4209,
         "type": "image/png"
       },
       "assets/Logos/uweed_favicon_32.png": {
         "store": "blob",
-        "id": "4016c7f1f797b5cad1f7e3cb2316911d",
+        "id": "101ffef925c358731e521b60b47af885",
         "sha256": "eecdc5c3e0860a76967d5fc2ce263ef7cf272a8eb2cec803b01d4449d5c5bb37",
         "bytes": 859,
         "type": "image/png"
       },
       "assets/Logos/uweed_logo_horizontal-tagline_black.svg": {
         "store": "blob",
-        "id": "fb8d049c9e39053a68d8161d0f8facde",
+        "id": "b44a8edddc15e92ceb32277eb60aefe6",
         "sha256": "3f77f0ae337c1fa57472cb80e9971d13ea8a0156987912a1038bd22ae444c738",
         "bytes": 8359,
         "type": "image/svg+xml"
       },
       "assets/Logos/uweed_logo_horizontal-tagline_dark-blue.svg": {
         "store": "blob",
-        "id": "d6d7600b6d27b0e8890808c5d8fdedb5",
+        "id": "684e6d05464c8f8175941945946fbe80",
         "sha256": "292ff4b85f2a99a206372ac6cf2c878259331d4f84c9b2a3f2046ac187f5099b",
         "bytes": 8359,
         "type": "image/svg+xml"
       },
       "assets/Logos/uweed_logo_horizontal-tagline_dark-green.svg": {
         "store": "blob",
-        "id": "3b035eec7bcf81e622c24b46cb5685f4",
+        "id": "b9e2359db5adac073e9ebdbbc527db69",
         "sha256": "0a0a0fd9a12196b254885afa245bbdec35e91c7eaff0288c7925c50c2028d6ce",
         "bytes": 8359,
         "type": "image/svg+xml"
       },
       "assets/Logos/uweed_logo_horizontal-tagline_dark-pink.svg": {
         "store": "blob",
-        "id": "0e1237cc24508748418b4baea493719e",
+        "id": "d55cef0291ac69eee59daffab4b901db",
         "sha256": "6b46ee50efe84c4ebe494686eed0bc568c317734f4e44bbba786ea4baac8ad18",
         "bytes": 8359,
         "type": "image/svg+xml"
       },
       "assets/Logos/uweed_logo_horizontal-tagline_light-blue.svg": {
         "store": "blob",
-        "id": "cea0226ca91871d587111583cc5d4960",
+        "id": "85baecfa5c6342c093b9da3c09934e59",
         "sha256": "8677f5756be6e69795810fcd5ec58b4f0e6e7e703c67cacdfc6a39b817a3f528",
         "bytes": 8359,
         "type": "image/svg+xml"
       },
       "assets/Logos/uweed_logo_horizontal-tagline_light-green.svg": {
         "store": "blob",
-        "id": "24f14884c23f5b12027be4f1554a5992",
+        "id": "2d39378ed0d876ae4655b30d56453640",
         "sha256": "53aafc2d76949da0caaf8e2dc8bb9f814014673455437527a5a8fd35490f1666",
         "bytes": 8359,
         "type": "image/svg+xml"
       },
       "assets/Logos/uweed_logo_horizontal-tagline_light-pink.svg": {
         "store": "blob",
-        "id": "dfb2726dd48c8cb0e2711a8be3dec98f",
+        "id": "3a16118c1a004e2c779186093e635cd4",
         "sha256": "09e06d3b12e9d20674019b3563fb627787069482c277c61d087048691c01db38",
         "bytes": 8359,
         "type": "image/svg+xml"
       },
       "assets/Logos/uweed_logo_horizontal-tagline_white.svg": {
         "store": "blob",
-        "id": "ccac4413c3b24ecdda66aac2abd14406",
+        "id": "a9572208c9fc3d13edf21b4c27de9353",
         "sha256": "54023ec734e111dc75fc9543c76452668a5c9ea6c2aafa4d3edc62fc6bf19b7e",
         "bytes": 8359,
         "type": "image/svg+xml"
       },
       "assets/Logos/uweed_logo_horizontal_black.svg": {
         "store": "blob",
-        "id": "4b8aa58033ffcca235879dae9d5e17b7",
+        "id": "e8ca2a82223c67fecc08dd8f37e89a7a",
         "sha256": "d6fa5ccd20aa18b4a9cc525ca1c01b5bb344b4b57b498dc6adc2c712b4f16897",
         "bytes": 1737,
         "type": "image/svg+xml"
       },
       "assets/Logos/uweed_logo_horizontal_dark-blue.svg": {
         "store": "blob",
-        "id": "1d680124e60ec7d4840c1826d71ebf89",
+        "id": "d21e4f48703b9f27d4bfcba52e7d2088",
         "sha256": "38bbf384da6f44822b12bc352b5257f70602c33c020bd330c08af4991df77f2f",
         "bytes": 1737,
         "type": "image/svg+xml"
       },
       "assets/Logos/uweed_logo_horizontal_dark-green.svg": {
         "store": "blob",
-        "id": "5a994bbd5eaba9cdd646c54d3656019f",
+        "id": "1bbd94eaf8d05b0147e308b2aba6291d",
         "sha256": "527c9bdeadb8905fb458b06e8dc20c925b4046b5c7131e61895c0dafffb7336e",
         "bytes": 1737,
         "type": "image/svg+xml"
       },
       "assets/Logos/uweed_logo_horizontal_dark-pink.svg": {
         "store": "blob",
-        "id": "a261c6f54462808d47cb1ad3244a1351",
+        "id": "1c950f86ffc5cef7159e81f55bbc99b5",
         "sha256": "31d4e5da5c749a557c68ddb0916b2eef71291cc3872c886021d93f1e6c873d16",
         "bytes": 1737,
         "type": "image/svg+xml"
       },
       "assets/Logos/uweed_logo_horizontal_light-blue.svg": {
         "store": "blob",
-        "id": "f37dcffa095d30100972b7397f4b6db4",
+        "id": "a8351b53475f06449d8ffb56efe95848",
         "sha256": "92aa332fc91bc34335162706a8d361cdb9131f6defa0fdbfa779a1beeb244059",
         "bytes": 1737,
         "type": "image/svg+xml"
       },
       "assets/Logos/uweed_logo_horizontal_light-green.svg": {
         "store": "blob",
-        "id": "1ce538cd04f1f7e3e1bb04a917ad9758",
+        "id": "aa8b9d9e95acd3fa761221cf93f54e8f",
         "sha256": "c0b50ac0bdd4fb229e3093075e01b63e34d900dec0f291a75d11d22b27c96984",
         "bytes": 1737,
         "type": "image/svg+xml"
       },
       "assets/Logos/uweed_logo_horizontal_light-pink.svg": {
         "store": "blob",
-        "id": "7da9c91446e40b153e49587f1d9b3375",
+        "id": "718f320252c00ed32f1dd9d90832dc8a",
         "sha256": "c825fd4b5cecc68e5b8f05949a151e0aa82da58eabfaea156a07a4da0f02ab3a",
         "bytes": 1737,
         "type": "image/svg+xml"
       },
       "assets/Logos/uweed_logo_horizontal_white.svg": {
         "store": "blob",
-        "id": "0a319c04304c116e0b6bad8bb8710802",
+        "id": "29846de42536b4d3665ec59f766dd0e9",
         "sha256": "082b3d55b37ce09b31e0d2b532f1386af45b82b5e0a15df8d8aa66baf842f05c",
         "bytes": 1737,
         "type": "image/svg+xml"
       },
       "assets/Logos/uweed_mark_black.svg": {
         "store": "blob",
-        "id": "03ec017362e19187358326d522be724b",
+        "id": "d15c112edf88914c5b8a6fd243cd617b",
         "sha256": "55b4283a4fcd93a029d0dcb526404d6c438baf8a714b557b140832a0d43cd77b",
         "bytes": 527,
         "type": "image/svg+xml"
       },
       "assets/Logos/uweed_mark_dark-blue.svg": {
         "store": "blob",
-        "id": "af965f7b92a6cb6e830c91531ab5a92a",
+        "id": "02b76e266ace61a913fdbfba8a8e7132",
         "sha256": "23da010bb10f7913ea22f60ca8fd8c0723a3efb8528565720a767db451c0449f",
         "bytes": 527,
         "type": "image/svg+xml"
       },
       "assets/Logos/uweed_mark_light-blue.svg": {
         "store": "blob",
-        "id": "efb085173eccb40bc8ddb3a0c0ca57b0",
+        "id": "fd64b412e9c30776f0884a22daa5ea1a",
         "sha256": "28ce1d8dee86bdf48384d49568ad8975dbc0e7b806deebf66706e3eb33a52bad",
         "bytes": 527,
         "type": "image/svg+xml"
       },
       "assets/Logos/uweed_mark_light-green.svg": {
         "store": "blob",
-        "id": "e3287947cc2fcfd789873c1b1aaf21b3",
+        "id": "71f5b5fa4bbd1d9adf44b6eac7cfffda",
         "sha256": "384492b0a0a7a9ebdb0cbe152f45457024acedadea67feb0f7b4f8d0f4e78bda",
         "bytes": 527,
         "type": "image/svg+xml"
       },
       "assets/Logos/uweed_mark_light-pink.svg": {
         "store": "blob",
-        "id": "e44b252e16c25076af91e5a9c7fde55e",
+        "id": "231a311aa1e34c296f7ac16a215b55f2",
         "sha256": "00b196d4a657aee34864a8706fd9d6eecdadce0410c5755e345233afbd48fc0d",
         "bytes": 527,
         "type": "image/svg+xml"
       },
       "assets/Logos/uweed_mark_white.svg": {
         "store": "blob",
-        "id": "db3936cf53c4dd55796299bec5156483",
+        "id": "31399ab2f7d6891be223a796615df79b",
         "sha256": "15359c84e17c2e8adda37954bb03551ee22d101138e4b48722f43903dd1db07d",
         "bytes": 527,
         "type": "image/svg+xml"
+      },
+      "assets/Logos/uweed_stamp_black.svg": {
+        "store": "blob",
+        "id": "4994330b9d1c7dfbf71eb4857257f414",
+        "sha256": "f242133766cc88a06ef48a62cca5d364c3f2da25e3c9f6e79f841f00a23603bc",
+        "bytes": 35033,
+        "type": "image/svg+xml"
+      },
+      "assets/Logos/uweed_stamp_dark-blue.svg": {
+        "store": "blob",
+        "id": "af188d08ce583878d9fa46f3a2da29fc",
+        "sha256": "eb534224d0498d6cf4296bfb786609f34868f73ad6455ac7602ef10f3e0fb2ef",
+        "bytes": 35033,
+        "type": "image/svg+xml"
+      },
+      "assets/Logos/uweed_stamp_dark-green.svg": {
+        "store": "blob",
+        "id": "af7e6fb0adbbf9b9aafc1a3d7bfe25ea",
+        "sha256": "d9d9230b8ad5b8400403c6bf2603642459bd14903bca1a1f1520d7e68bc001c0",
+        "bytes": 35033,
+        "type": "image/svg+xml"
+      },
+      "assets/Logos/uweed_stamp_dark-pink.svg": {
+        "store": "blob",
+        "id": "23fe6170a9abb0025d5cfc81e061b616",
+        "sha256": "120c9e43e392827e43e1df98294d95b68b3a16cde68b7c11cc2d7b5bbcef32dd",
+        "bytes": 35033,
+        "type": "image/svg+xml"
+      },
+      "assets/Logos/uweed_stamp_light-blue.svg": {
+        "store": "blob",
+        "id": "0c8ab15f0f39f86fbebbc3c721342648",
+        "sha256": "0dafa34572a01bfe3ee9764f9ed7c2ca62a503ba9c9df3c195cddd0df845513e",
+        "bytes": 35033,
+        "type": "image/svg+xml"
+      },
+      "assets/Logos/uweed_stamp_light-green.svg": {
+        "store": "blob",
+        "id": "b5c4817f0027953a408fe6e4e85c5e82",
+        "sha256": "07c9f11d6a115ede05cff64e3b9ebf0dc76aa060f3b94b53fb24d2cb6d8314c1",
+        "bytes": 35033,
+        "type": "image/svg+xml"
+      },
+      "assets/Logos/uweed_stamp_light-pink.svg": {
+        "store": "blob",
+        "id": "3c2248d66178d244448018870f321ad1",
+        "sha256": "34dcf89938971223ba7f93be6b669d14bdb68984bd2dedea794d1a53c8903f4f",
+        "bytes": 35033,
+        "type": "image/svg+xml"
+      },
+      "assets/Logos/uweed_stamp_white.svg": {
+        "store": "blob",
+        "id": "18d0960eea7db159deebba24c9260eb0",
+        "sha256": "463a8a0e21da0519ef62b81a108a11eb8f22915f99d6ff7b4dda9f80a915500b",
+        "bytes": 35033,
+        "type": "image/svg+xml"
       }
     },
-    "blobBytesUsed": 103476
+    "blobBytesUsed": 35223972
   }
 }

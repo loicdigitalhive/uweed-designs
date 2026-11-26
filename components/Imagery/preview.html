@@ -110,14 +110,14 @@ function uri(svg,w,h){return "data:image/svg+xml;utf8,"+encodeURIComponent('<svg
 var st='stroke="'+DG+'" stroke-width="8" fill="'+LINE+'"';
 /* supplied files, stored as design-system assets */
 var IMG={
- bl:"/_blob/e76c20146af73a049443ba23f881ca62",
- ha:"/_blob/27afeb206b85acaa843d7ccd5864df3a",
- jo:"/_blob/7a7c62e05955b254295f4b1466ab21d1",
- kr:"/_blob/d4b1a4cc4b1475f3e378f090b29bb1f2"
+ bl:"/_blob/3caa3774ba4ad734afefb4984fa57280",
+ ha:"/_blob/0a539c5951bc79d56bbccd29ec0fc85b",
+ jo:"/_blob/b0abcdd5bf04d8e49641f3dbb0210e74",
+ kr:"/_blob/e7b9e10882d2fa7c4d9605a238f4f6ea"
 };
 function cat(k){return IMG[k];}
 var names={bl:"CBD Blüten",ha:"CBD Hash",jo:"CBD Joints",kr:"CBD Kristalle & Isolat"};
-var BRAND={bc:["/_blob/8180e024567b6fddac4ac7b73672935f","B-Chill"],bb:["/_blob/5b50dde4bc57351f74cec98aaa373926","Bud Bouncy"],np:["/_blob/a816bbdea7f551220a3d133a5efc848d","Naturalpes"]};
+var BRAND={bc:["/_blob/6ebcb078dfd56e429f7bc48e0dd0ea94","B-Chill"],bb:["/_blob/44bd8b65956cc8b729944e79608b5be0","Bud Bouncy"],np:["/_blob/fea79a41ab60e5a0c0cfea90b38201c0","Naturalpes"]};
 /* stand-in for an opaque white-background logo file (no such file supplied) */
 var LOGO={opaque:'<rect x="0" y="0" width="1200" height="600" fill="'+W+'"/><rect x="240" y="250" width="720" height="100" rx="16" fill="'+DG+'"/>'};
 function logo(k){return BRAND[k]?BRAND[k][0]:uri(LOGO[k],1200,600);}
