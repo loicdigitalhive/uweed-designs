@@ -62,12 +62,13 @@ Write fresh in each language; never translate word for word. The test for every 
 
 The full rules are in *05 Localisation Rules*.
 
-### Sentence case, with two exceptions
+### Sentence case, with three exceptions
 
-Set breadcrumbs, headings, labels, messages and body copy in sentence case, in all three languages. English headings are not set in Title Case. The one exception is the English meta title, which keeps Title Case (see *06 SEO Elements*). Uppercase appears in exactly two places, always with `ls-caps`:
+Set breadcrumbs, headings, labels, messages and body copy in sentence case, in all three languages. English headings are not set in Title Case. The one exception is the English meta title, which keeps Title Case (see *06 SEO Elements*). Uppercase appears in exactly three places, always with `ls-caps`:
 
 - **CTA labels**: `IN DEN WARENKORB`.
 - **The category tab nav**: short labels scanned in a row.
+- **Section labels** (decided 27 November 2026): the short label above a section heading, and the hero pre-title, `UNSERE AUSWAHL`. The text is written and stored in sentence case; the capitals come from the style. A label never contains the brand name: in capitals it would read `UWEED`, and the brand is always `uWeed`.
 
 Never uppercase breadcrumbs: it costs about 12% width, and German breadcrumbs are already the longest.
 
@@ -116,7 +117,7 @@ Name icon-only controls, count badges and remove buttons in full sentences, and 
 |---|---|---|
 | **Blue** (`dark-blue`, `medium-blue`, `light-blue`) | Brand, structure, navigation | Headings, links, focus rings, tab nav active, filter and sort controls, the footer, overlay surfaces, prices, the count badges on the cart and favourites icons |
 | **Green** (`dark-green`, `medium-green`, `light-green`) | Commerce, the purchase path | Add to cart, checkout, in stock, the New badge, the brand line on a product tile |
-| **Pink** (`dark-pink`, `medium-pink`, `light-pink`) | uWeed informing or inviting, never selling | Blog category labels, pink icon discs in informing blocks, the small label of an informing block. Never a background |
+| **Pink** (`dark-pink`, `medium-pink`, `light-pink`) | uWeed speaking: labels and informing marks, never on a product or in the buying steps | Blog category labels, the section label above section headings, the hero pre-title, pink icon discs in informing blocks. Never a background |
 | **Orange** (`medium-orange`, `light-orange`) | Worth noticing: recognition and heads-up | Rating stars, Bestseller, loyalty, referral, the low-stock dot, the warning note. `dark-orange` is not an interface colour: see *Vertical colours* |
 | **Red** (`medium-red`, `light-red`) | Attention: what must not be missed | Errors, destructive actions, sale price, discount badge, the favourites heart (filled once something is saved; its count stays dark blue) |
 | **Grey** (`dark-gray`, `medium-gray`, `light-gray`, `line`) | Surface, structure, unavailability | Backgrounds, borders, disabled controls, metadata, attribute chips, out of stock |
@@ -130,11 +131,11 @@ Orange is the softer signal beside red: it marks what is worth noticing, whether
 Pink is uWeed speaking about itself or inviting the visitor, on content that informs rather than sells. It is a mark, never a surface, and it is used sparingly:
 
 - **Pink icon discs.** A `dark-pink` icon on a `light-pink` disc, inside an informing block: beside each fact of an icon list (`IconList`) and beside the heading of the newsletter invitation (`NewsletterBlock`). The block itself sits on `white` or `light-gray`.
-- **The small label** above the heading of an informing block is `dark-pink`.
+- **The section label** (decided 27 November 2026). Every section heading on a shop page carries a short label above it, two or three words, in the label style of `IconList` and `NewsletterBlock` (`.uw-inform__eyebrow`): `dark-pink`, `font-heading` at `fw-semibold`, `fs-meta`, capitals with `ls-caps`. It is left-aligned with the heading (see *Layout*). This includes sections that show products: the label sits above the heading, never on or among the tiles. The label of an informing block is the same label.
 - **The blog** keeps its pink category labels.
 - **Never a background.** No block, band, page, header or footer takes a pink background. An earlier rule allowed one light-pink block per page; it was withdrawn in October 2026.
 - **Where pink never goes.** Not behind products or product tiles, and nowhere in the buying steps: the reassurance icons under the buy button, the cart and the checkout stay free of pink. Never on a button, link, form state, price, product badge or focus ring.
-- `medium-pink` has no job in the interface yet.
+- **`medium-pink` has one job: the hero pre-title** on the `dark-blue` fade (decided 27 November 2026), 9.57:1. `dark-pink` fails there (3.08:1), so the hero takes the lighter pink and every other label the darker one.
 
 `IconList` and `NewsletterBlock` are built to this rule: both sit on the page or on a light-grey block and carry pink only as the disc and the small label. The guide teaser is `ArticleRow`, a row of article cards; its pink is the category label on each card.
 
@@ -227,6 +228,8 @@ Gate every hover inside `@media (hover: hover) and (pointer: fine)`. The one exc
 - **Focus** uses `:focus-visible`: a 2px `medium-blue` outline at 2px offset on light surfaces, and 3px `white` inside `.on-dark`. Every control uses this ring, the search field included; there are no exceptions. The tooltip alone opens on `:focus`, so it works on tap.
 
 ### Layout
+
+**Section headings are left-aligned** on every width (decided 27 November 2026): the section label, the heading and the intro start at the content edge, the way shoppers scan a shop page. The one centred head is `IconList` `cards`, the band above the footer. Buttons and links under a section follow their own component.
 
 Lay out with the Bootstrap 5.3 breakpoints `bs-breakpoint-sm` to `bs-breakpoint-xxl`, for layout only and never for type. Contain pages at `container-xl`, `container-xxl`, `container-wide-lg` and `container-wide`. Detect the input, not the width. Stack fixed elements by token from `z-sticky` through `z-header`, `z-panel`, `z-tooltip`, `z-backdrop`, `z-modal` to `z-drawer`. Give tap targets 44×44px under `(pointer: coarse)`, usually by making the label the hit area.
 
@@ -366,7 +369,7 @@ The homepage hero banner shows one picture per banner, edge to edge, with the he
 - **Desktop:** leave the middle of the right edge and the middle of the bottom edge free of anything that matters. The arrow and the progress bars sit there.
 - **Tablet held sideways and narrow laptop windows (992 to about 1100px):** the box is narrower than the desktop file, so the picture is cut on the left, never on the right. The fade from the left ends 964px from the left edge, so here it reaches almost across the picture, the focus zone is dimmer than on a 1280px window, and its left edge can slide behind the end of the text.
 
-**Text and buttons.** Each banner has a title, an optional pre-title and subtitle, CTA 1 and an optional CTA 2, all in `white` on the fade.
+**Text and buttons.** Each banner has a title, an optional pre-title and subtitle, CTA 1 and an optional CTA 2 on the fade. The pre-title is a section label in `medium-pink` capitals (decided 27 November 2026); everything else is `white`.
 
 - **CTA 1** is the button: a `white` pill (`radius-pill`) with its label in `dark-blue` capitals, at least 48px high. It is not a `Button` variant yet.
 - **CTA 2** is a text link: `white`, bold, underlined, no box, at least 44px high to tap. On a desktop it sits on the same line, 28px right of the button; on a phone it sits centred below the button.
@@ -426,7 +429,7 @@ Two more groups show the system in use rather than one component at a time:
 - **Intentional additions:** `RadioGroup` exists because no radio group on the live site uses the grouped pattern unless something makes it easier.
 - **Not built:** the header, mega menu, mobile menu, PDP sticky bar and variation selector. Each is blocked in the source on a decision or a redesign. Where a page needs one, compose documented components and say so.
 - **Articles are teased one way.** Outside the magazine that is `ArticleRow`: cards three across on a desktop and a list of rows on a phone, never a swipe row, never a card with the title laid over the picture. On a phone every `BlogCard` is a row with the category label above the title.
-- **Every page ends the same way** (16 November 2026): the `IconList` cards ("Warum uWeed"), then `NewsletterBlock` without its disc, then `Footer`. The footer is one markup for every width: contact first, three link columns that are disclosures below `lg`, a trust band, then the logo with the legal links.
+- **Every page ends the same way** (16 November 2026): the `IconList` cards (label "Gut zu wissen"), then `NewsletterBlock` without its disc, then `Footer`. The footer is one markup for every width: contact first, three link columns that are disclosures below `lg`, a trust band, then the logo with the legal links.
 - **Brand and city pages** are page layouts that arrange these components, not components of their own.
 - **Filters on a phone.** Below `lg` the filter pills and the sort control give way to one filled blue button, "Filter & Sortierung (3)", that opens `FilterPanel`: full screen, sorting as its own block at the top, each filter opening in place and naming what is chosen in it ("Harlequin, Sweed +2"), reset bottom left and a blue button with the number of matching products bottom right. Decided in October 2026 against published research on leading shops.
 - **Counts are grey.** The product count beside a filter option is `medium-gray`. Blue is the colour of links; text that cannot be tapped never takes it.

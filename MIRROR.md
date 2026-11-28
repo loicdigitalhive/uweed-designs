@@ -7,9 +7,9 @@ The design system there is the master. This copy exists so that other tools and 
 Never edit files here: a change made here is overwritten by the next copy. Change the design system,
 and the copy follows.
 
-Copied from version `1795703204-78d6` on 2026-11-26. Last recorded change in the system: 2026-11-26T14:26:36Z (Loic). 26 Nov 2026: WarningBand added: the legal warning for smoking products and vapes in advertising, full width at the bottom, 10% of the banner, thick black frame, black Helvetica Bold on white; DE, FR and EN texts (compliance D21).
+Copied from version `1795798234-a7cf` on 2026-11-28. Last recorded change in the system: 2026-11-27T16:52:00Z (Loic). 27 Nov 2026: every section heading carries a section label above it (dark-pink capitals, the IconList/NewsletterBlock label style), left-aligned with the heading; the hero pre-title is medium-pink; a third uppercase exception for section labels; labels never contain the brand name; only the IconList cards band above the footer is centred.
 
-Version tag: [`ds-2026-11-26-5`](https://github.com/loicdigitalhive/uweed-designs/releases/tag/ds-2026-11-26-5). Every copy is tagged `ds-<date>`; [all versions](https://github.com/loicdigitalhive/uweed-designs/tags).
+Version tag: [`ds-2026-11-28`](https://github.com/loicdigitalhive/uweed-designs/releases/tag/ds-2026-11-28). Every copy is tagged `ds-<date>`; [all versions](https://github.com/loicdigitalhive/uweed-designs/tags).
 
 ## What is where
 

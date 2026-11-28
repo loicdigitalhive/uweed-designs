@@ -11,7 +11,7 @@ Use `NewsletterBlock` to invite a visitor to the newsletter: on the homepage, at
 <NewsletterBlock title="…" status="success" message="Danke für deine Anmeldung." />
 ```
 
-- **A light-grey block with one pink disc.** The block is `light-gray`; pink appears only as the disc with the envelope and the small label above the heading. Pink is never the background.
+- **A light-grey block with one pink disc.** The block is `light-gray`; pink appears only as the disc with the envelope and the section label above the heading (README, *Colour*). Pink is never the background.
 - **Never in the buying steps.** Not in the cart, the checkout or beside the buy button.
 - **Dark blue and dark grey, blue button.** Heading, text and the success line are dark blue or dark grey, and the button is the blue `nav` button. Never a green button here: subscribing is not buying.
 - **The field is white.** The block already carries the field's usual light grey.
